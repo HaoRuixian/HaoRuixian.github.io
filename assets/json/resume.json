@@ -3,7 +3,7 @@
     "name": "Ruixian Hao",
     "label": "Researcher",
     "image": "",
-    "summary": "Researcher affiliated with the College of Geoscience and Surveying Engineering, China University of Mining and Technology - Beijing. Publicly listed work focuses on GNSS meteorology, tropospheric delay modeling, atmospheric water vapor, and GNSS water vapor tomography.",
+    "summary": "Researcher affiliated with the College of Geoscience and Surveying Engineering, China University of Mining and Technology - Beijing. Published work focuses on GNSS meteorology, tropospheric delay modeling, atmospheric water vapor, GNSS water vapor tomography, and GNSS reflectometry for water-level and sea-surface-height retrieval.",
     "location": {
       "city": "Beijing",
       "region": "China",
@@ -25,10 +25,40 @@
   "certificates": [],
   "publications": [
     {
+      "name": "GMR-water: a water level retrieval software for multi-GNSS, multi-frequence and multi-observation based on GNSS-MR",
+      "publisher": "GPS Solutions",
+      "releaseDate": "2026-06-01",
+      "url": "https://doi.org/10.1007/s10291-026-02111-y"
+    },
+    {
+      "name": "Calculation and evaluation of ZTD based on ensemble forecast data and AI-based weather model from ECMWF",
+      "publisher": "Geodesy and Geodynamics",
+      "releaseDate": "2026-06-01",
+      "url": "https://doi.org/10.1016/j.geog.2026.06.005"
+    },
+    {
+      "name": "A Fusion Method of GNSS-IR Sea Surface Height Using the Carrier and SNR",
+      "publisher": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+      "releaseDate": "2026-01-01",
+      "url": "https://doi.org/10.1109/JSTARS.2026.3691785"
+    },
+    {
+      "name": "How to predict the zenith tropospheric delay (ZTD): using the ensemble forecast data from different NWP",
+      "publisher": "Advances in Space Research",
+      "releaseDate": "2026-02-01",
+      "url": "https://doi.org/10.1016/j.asr.2025.12.040"
+    },
+    {
       "name": "An optimal method for GNSS water vapor tomography based on parameter adaptation",
       "publisher": "GPS Solutions",
       "releaseDate": "2025-12-10",
       "url": "https://doi.org/10.1007/s10291-025-02006-4"
+    },
+    {
+      "name": "The reflectometry method and accuracy analysis of the sea surface height based multi-observation from BDS",
+      "publisher": "Satellite Navigation",
+      "releaseDate": "2025-04-01",
+      "url": "https://doi.org/10.12265/j.gnss.2024208"
     },
     {
       "name": "ERA5-SH: A global grided scale height dataset for tropospheric parameters based on ERA5 reanalysis",
@@ -68,6 +98,8 @@
         "GNSS meteorology",
         "Tropospheric delay modeling",
         "Water vapor tomography",
+        "GNSS reflectometry",
+        "Sea-surface-height retrieval",
         "Atmospheric remote sensing"
       ]
     },
@@ -77,7 +109,9 @@
         "GNSS data analysis",
         "Kalman filtering",
         "Parameter adaptation",
-        "Reanalysis-based modeling"
+        "Reanalysis-based modeling",
+        "Ensemble forecast evaluation",
+        "GNSS-MR and GNSS-IR retrieval"
       ]
     }
   ],
@@ -89,7 +123,9 @@
         "GNSS water vapor tomography",
         "Tropospheric delay evaluation",
         "Water vapor scale height",
-        "Atmospheric water vapor products"
+        "Atmospheric water vapor products",
+        "Water-level retrieval",
+        "Sea-surface-height monitoring"
       ]
     }
   ],

@@ -29,6 +29,8 @@ latest_posts:
 
 Ruixian Hao is affiliated with the College of Geoscience and Surveying Engineering at China University of Mining and Technology - Beijing.
 
-Based on the publications currently listed on public research profiles, their work focuses on GNSS meteorology, tropospheric delay modeling, water vapor tomography, and atmospheric remote sensing.
+Their published work focuses on GNSS meteorology, zenith tropospheric delay (ZTD) modeling, atmospheric water vapor products, GNSS water vapor tomography, and GNSS reflectometry for water-level and sea-surface-height retrieval.
+
+ResearchGate currently lists 11 publications for Ruixian Hao, including recent work on GMR-water software for GNSS-MR water-level retrieval, ECMWF ensemble and AI-based ZTD evaluation, GNSS-IR sea-surface-height fusion, ERA5-derived scale-height datasets, and parameter-adaptive GNSS water vapor tomography.
 
 A fuller list of publications is available on the [Publications]({{ '/publications/' | relative_url }}) page and on [ResearchGate](https://www.researchgate.net/profile/Ruixian-Hao/).
