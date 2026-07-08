@@ -1,9 +1,10 @@
 {
   "basics": {
     "name": "Ruixian Hao",
-    "label": "Researcher",
+    "label": "M.S. Student in Surveying and Mapping Science and Technology",
     "image": "",
-    "summary": "Researcher affiliated with the College of Geoscience and Surveying Engineering, China University of Mining and Technology - Beijing. Published work focuses on GNSS meteorology, tropospheric delay modeling, atmospheric water vapor, GNSS water vapor tomography, and GNSS reflectometry for water-level and sea-surface-height retrieval.",
+    "email": "vitamin_n@outlook.com",
+    "summary": "Ruixian Hao is a graduate student at the College of Geoscience and Surveying Engineering, China University of Mining and Technology - Beijing. His research focuses on GNSS meteorology, tropospheric delay modeling, atmospheric water vapor, GNSS water vapor tomography, and GNSS reflectometry for water-level and sea-surface-height retrieval.",
     "location": {
       "city": "Beijing",
       "region": "China",
@@ -15,13 +16,133 @@
         "network": "ResearchGate",
         "username": "Ruixian-Hao",
         "url": "https://www.researchgate.net/profile/Ruixian-Hao/"
+      },
+      {
+        "network": "GitHub",
+        "username": "HaoRuixian",
+        "url": "https://github.com/HaoRuixian"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "name": "National Key Laboratory of Air-Ground Integrated New Navigation System Technology, Beihang University",
+      "position": "Research Intern",
+      "location": "Beijing, China",
+      "startDate": "2024-07-01",
+      "endDate": "2024-09-30",
+      "summary": "GNSS ionospheric scintillation and civil aviation positioning research.",
+      "highlights": [
+        "Studied the influence of ionospheric scintillation on civil aviation positioning using ADS-B trajectory data.",
+        "Processed GNSS carrier-phase observations, applied dual-frequency ionosphere-free combinations, and removed orbit, clock, tropospheric, and relativistic effects before estimating residual-based scintillation indicators."
+      ]
+    },
+    {
+      "name": "Student Union, College of Geoscience and Surveying Engineering, China University of Mining and Technology - Beijing",
+      "position": "Academic Department Member and Core Member",
+      "location": "Beijing, China",
+      "startDate": "2021-09-01",
+      "endDate": "2023-06-30",
+      "summary": "Academic event organization and student service.",
+      "highlights": [
+        "Served as academic department member from 2021 to 2022 and core member from 2022 to 2023.",
+        "Organized and hosted debate activities and contributed to the Jingwei Cup professional competence competition.",
+        "Recognized as Department Star and Outstanding Student Cadre."
+      ]
+    }
+  ],
   "volunteer": [],
-  "education": [],
-  "awards": [],
+  "education": [
+    {
+      "institution": "China University of Mining and Technology - Beijing",
+      "area": "Surveying and Mapping Science and Technology",
+      "studyType": "M.S.",
+      "startDate": "2025-09-01",
+      "endDate": "2028-06-30",
+      "location": "Beijing, China",
+      "highlights": ["Graduate study in GNSS meteorology, tropospheric parameter modeling, GNSS reflectometry, and atmospheric remote sensing."]
+    },
+    {
+      "institution": "China University of Mining and Technology - Beijing",
+      "area": "Surveying Engineering",
+      "studyType": "B.Eng.",
+      "startDate": "2021-09-01",
+      "endDate": "2025-06-30",
+      "location": "Beijing, China",
+      "courses": [
+        "Advanced Mathematics (99)",
+        "Linear Algebra (98)",
+        "GNSS Principles and Applications (97)",
+        "Remote Sensing Digital Image Processing (93)"
+      ],
+      "highlights": [
+        "Ranked first in the major for three consecutive years.",
+        "Recommended for postgraduate study at China University of Mining and Technology - Beijing."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "First Prize, 2025 Challenge Cup Extracurricular Academic Works Competition",
+      "date": "2025-06-01",
+      "awarder": "China University of Mining and Technology - Beijing",
+      "summary": "Awarded to Hao Ruixian, Zhang Yuhao, Wen Zhuoyue, and Han Xinying."
+    },
+    {
+      "title": "Second Prize, Qingchuang Beijing 2025 Challenge Cup Capital University Student Competition",
+      "date": "2025-06-01",
+      "awarder": "Beijing Challenge Cup Organizing Committee",
+      "summary": "Awarded to Hao Ruixian, Zhang Yuhao, Wen Zhuoyue, and Han Xinying."
+    },
+    {
+      "title": "First Prize, 2025 College Student Innovation and Entrepreneurship Competition",
+      "date": "2025-03-01",
+      "awarder": "College of Geoscience and Surveying Engineering",
+      "summary": "Awarded to Hao Ruixian, Yang Rui, Zhang Yajun, and teammates."
+    },
+    {
+      "title": "Third Prize, China International College Students' Innovation Competition 2025, Beijing Division",
+      "date": "2025-08-01",
+      "awarder": "Beijing Division",
+      "summary": "Awarded to Hao Ruixian, Yang Rui, Zhang Yuhao, and teammates."
+    },
+    {
+      "title": "Second Prize, Intelligent and Collaborative 2025 13th University GIS Forum Innovation and Entrepreneurship Competition",
+      "date": "2025-11-01",
+      "awarder": "University GIS Forum",
+      "summary": "Awarded to Hao Ruixian, Wang Haoyu, Chen Weicong, and Zheng Junxi."
+    },
+    {
+      "title": "National Scholarship",
+      "date": "2022-12-01",
+      "awarder": "Ministry of Education of China",
+      "summary": "Received for the 2021-2022 academic year."
+    },
+    {
+      "title": "National Scholarship",
+      "date": "2023-12-01",
+      "awarder": "Ministry of Education of China",
+      "summary": "Received for the 2022-2023 academic year."
+    },
+    {
+      "title": "National Encouragement Scholarship",
+      "date": "2024-12-01",
+      "awarder": "Ministry of Education of China",
+      "summary": "Received for the 2023-2024 academic year."
+    },
+    {
+      "title": "Second Prize, National College Students Surveying and Mapping Discipline Innovation and Entrepreneurship Intelligent Competition",
+      "date": "2023-01-01",
+      "awarder": "National College Students Surveying and Mapping Discipline Competition",
+      "summary": "National-level surveying and mapping innovation competition award."
+    },
+    {
+      "title": "Special-Class Scholarship and First-Class Scholarship",
+      "date": "2024-12-01",
+      "awarder": "China University of Mining and Technology - Beijing",
+      "summary": "Special-Class Scholarship in 2021-2022 and 2022-2023; First-Class Scholarship in 2023-2024."
+    }
+  ],
   "certificates": [],
   "publications": [
     {
@@ -109,13 +230,27 @@
         "GNSS data analysis",
         "Kalman filtering",
         "Parameter adaptation",
-        "Reanalysis-based modeling",
+        "ERA5 reanalysis",
+        "Radiosonde validation",
         "Ensemble forecast evaluation",
         "GNSS-MR and GNSS-IR retrieval"
       ]
+    },
+    {
+      "name": "Programming and Tools",
+      "keywords": ["MATLAB", "Python", "C", "RTKLIB", "RINEX processing", "Scientific visualization"]
     }
   ],
-  "languages": [],
+  "languages": [
+    {
+      "language": "Chinese",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Academic reading and writing"
+    }
+  ],
   "interests": [
     {
       "name": "Academic Interests",
@@ -130,5 +265,50 @@
     }
   ],
   "references": [],
-  "projects": []
+  "projects": [
+    {
+      "name": "ERA5-SH: Scale-height dataset for tropospheric parameters",
+      "url": "https://github.com/HaoRuixian/ERA5-SH-dataset-for-troposphere-parameters-code-for-estimate-and-analysis",
+      "startDate": "2023-06-01",
+      "endDate": "2024-11-30",
+      "summary": "Global gridded scale-height dataset based on ERA5 pressure-level reanalysis profiles.",
+      "highlights": [
+        "Calculated vertical profiles for ZTD, ZWD, ZHD, Tm, PWV, and WVD from ERA5 reanalysis data.",
+        "Estimated scale heights through exponential fitting and evaluated product accuracy with 591 global radiosonde stations from 2022.",
+        "Published as a Scientific Data paper and released supporting code on GitHub."
+      ]
+    },
+    {
+      "name": "GMR-Water: GNSS-MR water-level retrieval software",
+      "url": "https://github.com/HaoRuixian/GNSS-IR-Kit",
+      "startDate": "2023-07-01",
+      "endDate": "2025-03-31",
+      "summary": "MATLAB software for water-level retrieval using GNSS multipath reflectometry.",
+      "highlights": [
+        "Integrated spectral analysis, inverse modeling, carrier/pseudo-range combinations, and multi-frequency fusion methods.",
+        "Supports SNR, carrier phase, and pseudo-range based retrieval with visualization and accuracy evaluation.",
+        "Provides GUI and scripted workflows for reproducible and batch processing."
+      ]
+    },
+    {
+      "name": "Spatial-temporal variation of water vapor scale height in China",
+      "startDate": "2023-02-01",
+      "endDate": "2024-05-31",
+      "summary": "Analysis of water vapor scale-height characteristics and impact factors across Chinese climate zones.",
+      "highlights": [
+        "Used radiosonde observations from 89 Chinese stations to calculate water vapor scale height from 2016 to 2019.",
+        "Analyzed spatial-temporal variation patterns and impact factors across climate regions.",
+        "Published in Advances in Space Research."
+      ]
+    },
+    {
+      "name": "RTGS: RealTimeGNSS Studio",
+      "url": "https://github.com/HaoRuixian/RTGS",
+      "summary": "Python-based project for practical real-time GNSS workflows.",
+      "highlights": [
+        "Supports workflow-oriented GNSS processing experiments.",
+        "Complements research projects with practical real-time data handling tools."
+      ]
+    }
+  ]
 }

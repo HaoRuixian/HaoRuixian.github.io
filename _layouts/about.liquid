@@ -64,6 +64,23 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Selected projects -->
+    {% if page.selected_projects %}
+      <h2>
+        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">featured projects</a>
+      </h2>
+      {% assign featured_projects = site.projects | where: 'featured', true | sort: 'importance' %}
+      <div class="projects">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2">
+            {% for project in featured_projects limit: 4 %}
+              {% include projects_horizontal.liquid %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">

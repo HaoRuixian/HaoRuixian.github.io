@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - HaoRuixian
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - HaoRuixian/GNSS-IR-Kit
+  - HaoRuixian/ERA5-SH-dataset-for-troposphere-parameters-code-for-estimate-and-analysis
+  - HaoRuixian/RTGS
+  - HaoRuixian/my_RTKLIB
+  - HaoRuixian/HaoRuixian.github.io

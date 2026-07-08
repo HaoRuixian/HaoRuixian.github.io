@@ -1,13 +1,12 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: false
+description: Selected research datasets, GNSS software, and open-source engineering projects.
+nav: true
 nav_order: 3
-published: false
-display_categories: [work, fun]
-horizontal: false
+display_categories: [data, software]
+horizontal: true
 ---
 
 <!-- pages/projects.md -->
