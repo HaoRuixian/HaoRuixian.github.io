@@ -29,6 +29,12 @@ body.sticky-bottom-footer {
   padding-bottom: 0;
 }
 
+html[data-lang="en"] [data-lang-zh],
+html[data-lang="zh"] [data-lang-en],
+html:not([data-lang="zh"]) [data-lang-zh] {
+  display: none !important;
+}
+
 .container {
   max-width: v.$max-content-width;
 }

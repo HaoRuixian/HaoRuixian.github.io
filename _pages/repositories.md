@@ -2,14 +2,27 @@
 layout: page
 permalink: /repositories/
 title: Repositories
+nav_title_zh: 代码仓库
 description: Public GitHub repositories connected to Ruixian Hao's GNSS research and software work.
 nav: true
 nav_order: 4
 ---
 
+<div data-lang-en markdown="1">
+
+These repositories collect the main open-source outputs behind the dataset, GNSS reflectometry, and practical GNSS processing work.
+
+</div>
+
+<div data-lang-zh markdown="1">
+
+这里汇总与数据集、GNSS 反射测量和实用 GNSS 数据处理相关的主要开源仓库，重点包括 ERA5-SH、GMR-Water、RTGS 和 my_RTKLIB。
+
+</div>
+
 {% if site.data.repositories.github_users %}
 
-## GitHub users
+## <span data-lang-en>GitHub users</span><span data-lang-zh>GitHub 用户</span>
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for user in site.data.repositories.github_users %}
@@ -37,7 +50,7 @@ nav_order: 4
 
 {% if site.data.repositories.github_repos %}
 
-## GitHub Repositories
+## <span data-lang-en>GitHub Repositories</span><span data-lang-zh>GitHub 仓库</span>
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.github_repos %}

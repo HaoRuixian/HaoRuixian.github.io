@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang }}">
+<html lang="{{ site.lang }}" data-lang="{{ site.lang | default: 'en' }}">
   <!-- Head -->
   <head>
     {% if page.redirect %}
@@ -12,11 +12,25 @@
       {% endif %}
       <meta http-equiv="refresh" content="3; url={{ redirect }}">
     {% endif %}
+    <script>
+      (function () {
+        try {
+          var lang = localStorage.getItem('siteLang') === 'zh' ? 'zh' : 'en';
+          document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+          document.documentElement.dataset.lang = lang;
+        } catch (error) {
+          document.documentElement.dataset.lang = 'en';
+        }
+      })();
+    </script>
     {% include head.liquid %}
   </head>
 
   <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body
+    class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}"
+    data-lang="{{ site.lang | default: 'en' }}"
+  >
     <!-- Header -->
     {% include header.liquid %}
 

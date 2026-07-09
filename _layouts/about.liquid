@@ -59,7 +59,10 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">
+          <span data-lang-en>selected publications</span>
+          <span data-lang-zh>代表论文</span>
+        </a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
@@ -67,7 +70,10 @@ layout: default
     <!-- Selected projects -->
     {% if page.selected_projects %}
       <h2>
-        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">featured projects</a>
+        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">
+          <span data-lang-en>featured projects</span>
+          <span data-lang-zh>重点项目</span>
+        </a>
       </h2>
       {% assign featured_projects = site.projects | where: 'featured', true | sort: 'importance' %}
       <div class="projects">

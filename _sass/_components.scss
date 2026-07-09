@@ -139,7 +139,9 @@ ul.task-list input[type="checkbox"] {
     img {
       width: 100%;
       aspect-ratio: 16 / 9;
-      object-fit: cover;
+      object-fit: contain;
+      background-color: #fff;
+      border-bottom: 1px solid var(--global-divider-color);
     }
   }
 
