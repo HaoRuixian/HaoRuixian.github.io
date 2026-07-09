@@ -8,11 +8,11 @@ basics:
     city: Beijing
     countryCode: CN
   summary: >
-    Ruixian Hao works on GNSS meteorology, tropospheric delay modeling,
-    atmospheric water vapor products, GNSS water vapor tomography, and GNSS
-    reflectometry. His recent work includes the ERA5-SH global scale-height
-    dataset and GMR-Water, a MATLAB software package for GNSS-MR water-level
-    retrieval.
+    Ruixian Hao works on geoscience applications of low-cost GNSS receivers,
+    high-precision GNSS-IR/GNSS-MR algorithms, and key tropospheric parameters
+    for GNSS meteorology and atmospheric remote sensing. His recent work
+    includes the ERA5-SH global scale-height dataset and GMR-Water, a MATLAB
+    software package for multi-GNSS water-level retrieval.
 
 education:
   - institution: China University of Mining and Technology - Beijing

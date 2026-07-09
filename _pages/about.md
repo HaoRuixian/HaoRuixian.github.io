@@ -9,11 +9,13 @@ subtitle: >
 
 profile:
   align: right
-  image:
+  image: profile_ruixian_hao.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>College of Geoscience and Surveying Engineering</p>
-    <p>China University of Mining and Technology - Beijing</p>
+    <p data-lang-en>College of Geoscience and Surveying Engineering</p>
+    <p data-lang-en>China University of Mining and Technology - Beijing</p>
+    <p data-lang-zh>中国矿业大学（北京）</p>
+    <p data-lang-zh>地球科学与测绘工程学院</p>
     <p>Beijing, China</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -33,26 +35,26 @@ latest_posts:
 
 <div data-lang-en markdown="1">
 
-Ruixian Hao is affiliated with the College of Geoscience and Surveying Engineering at China University of Mining and Technology - Beijing.
+Ruixian Hao is a geomatics researcher at the College of Geoscience and Surveying Engineering, China University of Mining and Technology - Beijing.
 
-His research focuses on GNSS meteorology, tropospheric delay modeling, atmospheric water vapor products, GNSS water vapor tomography, and GNSS reflectometry for water-level and sea-surface-height retrieval.
+His research focuses on geoscience applications of low-cost GNSS receivers, high-precision GNSS-IR/GNSS-MR algorithms, and key tropospheric parameters for GNSS meteorology and atmospheric remote sensing.
 
-ResearchGate currently lists 11 publications for Ruixian Hao, covering GMR-Water software for GNSS-MR water-level retrieval, ECMWF ensemble and AI-based ZTD evaluation, GNSS-IR sea-surface-height fusion, ERA5-derived scale-height datasets, and parameter-adaptive GNSS water vapor tomography.
+His work connects low-cost observation platforms, multi-source GNSS observations, numerical reanalysis products, and independent validation data to build reproducible methods for environmental sensing, water-level monitoring, sea-surface-height retrieval, tropospheric delay correction, and water vapor characterization.
 
-Current project work centers on two highlighted releases: the ERA5-SH dataset for global tropospheric-parameter scale heights and the GMR-Water MATLAB software for multi-GNSS, multi-frequency, and multi-observation water-level retrieval.
+Current project work includes ERA5-SH, a global scale-height dataset for tropospheric parameters, and GMR-Water, a MATLAB software package for multi-GNSS, multi-frequency, and multi-observation water-level retrieval.
 
-A fuller list of publications is available on the [Publications]({{ '/publications/' | relative_url }}) page and on [ResearchGate](https://www.researchgate.net/profile/Ruixian-Hao/).
+Publication details, paper figures, abstracts, datasets, and software links are available on the [Publications]({{ '/publications/' | relative_url }}) and [Projects]({{ '/projects/' | relative_url }}) pages.
 
 </div>
 
 <div data-lang-zh markdown="1">
 
-郝睿贤就读于中国矿业大学（北京）地球科学与测绘工程学院，研究方向集中在 GNSS 气象学、对流层延迟建模、大气水汽产品、GNSS 水汽层析以及面向水位/海面高反演的 GNSS 反射测量。
+郝睿贤就读于中国矿业大学（北京）地球科学与测绘工程学院，研究方向聚焦低成本 GNSS 接收机地学应用、高精度 GNSS-IR/GNSS-MR 反演算法，以及面向 GNSS 气象学和大气遥感的对流层关键参量研究。
 
-ResearchGate 当前收录其 11 篇相关论文，内容包括 GMR-Water 水位反演软件、ECMWF 集合预报与 AI ZTD 产品评估、GNSS-IR 海面高融合反演、ERA5 尺度高度数据集，以及参数自适应 GNSS 水汽层析等。
+相关研究围绕低成本观测平台、多源 GNSS 观测、数值再分析资料和独立验证数据展开，服务于地表环境感知、水位监测、海面高反演、对流层延迟改正与大气水汽结构刻画等应用。
 
-目前重点展示的项目包括 ERA5-SH 全球对流层关键参量尺度高度数据集，以及 GMR-Water 多 GNSS、多频点、多观测值水位反演 MATLAB 软件；相关代码、数据与文档均已通过 GitHub 或 Zenodo 开放。
+目前重点项目包括 ERA5-SH 全球对流层关键参量尺度高度数据集，以及 GMR-Water 多 GNSS、多频点、多观测值水位反演 MATLAB 软件；相关代码、数据与文档均已通过 GitHub 或 Zenodo 开放。
 
-完整论文列表见 [Publications]({{ '/publications/' | relative_url }}) 页面，也可访问 [ResearchGate](https://www.researchgate.net/profile/Ruixian-Hao/)。
+论文图件、摘要、数据集和软件链接见 [Publications]({{ '/publications/' | relative_url }}) 与 [Projects]({{ '/projects/' | relative_url }}) 页面。
 
 </div>
