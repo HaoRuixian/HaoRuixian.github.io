@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Deploying a Multi-Sensor GNSS Observation Station
+title_zh: 我在综合楼楼顶部署了一套 GNSS 综合观测基站
 date: 2026-07-14
 description: A field report on designing, installing, and commissioning a rooftop GNSS and environmental monitoring platform.
 tags: [GNSS, GNSS meteorology, multi-sensor integration]
@@ -19,8 +20,6 @@ _styles: |
 ---
 
 <div data-lang-en markdown="1">
-
-# Deploying a Multi-Sensor GNSS Observation Station
 
 After several weeks of planning, equipment selection, and field work, I successfully deployed a comprehensive GNSS observation station on the rooftop of our university building. The project covered the complete workflow from system design and procurement to support-bracket fabrication, installation, commissioning, and remote data access. The platform combines high-precision GNSS observations with meteorological and precipitation measurements, creating a complete experimental infrastructure for GNSS meteorology, multi-sensor integration, atmospheric remote sensing, and GNSS data-quality analysis.
 
@@ -47,8 +46,6 @@ The following photos document the installation process and the final rooftop sta
 </div>
 
 <div data-lang-zh markdown="1">
-
-# 我在综合楼楼顶部署了一套 GNSS 综合观测基站
 
 经过一段时间的方案设计、设备选型和现场安装，我完成了实验室综合楼楼顶 GNSS 综合观测基站的部署。整个项目覆盖了系统方案设计、设备采购、支架设计制作、现场安装调试以及后续远程数据访问等完整流程。这套系统不仅能够开展高精度 GNSS 观测，还集成了气象传感器和降雨监测设备，为后续 GNSS 气象学、多传感器融合、大气遥感以及 GNSS 数据质量分析提供了完整的实验平台。
 
