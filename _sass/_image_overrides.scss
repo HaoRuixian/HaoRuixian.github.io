@@ -1,0 +1,17 @@
+/*******************************************************************************
+ * Image display overrides for project and publication cards.
+ ******************************************************************************/
+
+.projects .card img {
+  min-height: 220px;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background-color: var(--global-image-bg-color);
+}
+
+.publications ol.bibliography li .preview {
+  min-height: 220px;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background-color: var(--global-image-bg-color);
+}
