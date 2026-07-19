@@ -2,9 +2,10 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: false
-nav_order: 1
-published: false
+nav_title_zh: 博客
+nav: true
+nav_order: 2
+published: true
 pagination:
   enabled: true
   collection: posts

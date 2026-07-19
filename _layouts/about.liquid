@@ -51,7 +51,10 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">
+          <span data-lang-en>blog</span>
+          <span data-lang-zh>博客</span>
+        </a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}

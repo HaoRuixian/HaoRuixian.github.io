@@ -11,12 +11,6 @@ profile:
   align: right
   image: profile_ruixian_hao.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p data-lang-en>College of Geoscience and Surveying Engineering</p>
-    <p data-lang-en>China University of Mining and Technology - Beijing</p>
-    <p data-lang-zh>中国矿业大学（北京）</p>
-    <p data-lang-zh>地球科学与测绘工程学院</p>
-    <p>Beijing, China</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 selected_projects: true # includes highlighted GitHub and research projects
@@ -28,9 +22,9 @@ announcements:
   limit: 0 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: false
+  enabled: true
   scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 0 # leave blank to include all the blog posts
+  limit: 3 # show the three most recent posts on the homepage
 ---
 
 <div data-lang-en markdown="1">
