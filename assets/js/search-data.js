@@ -70,11 +70,6 @@ ninja.data = [{
           description: "MATLAB toolbox for high-precision water-level retrieval using GNSS multipath reflectometry.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/gmr-water/";
-            },},{id: "projects-my-rtklib",
-          title: 'my_RTKLIB',
-          description: "RTKLIB-based GNSS positioning codebase for algorithm learning, testing, and modification.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/my-rtklib/";
             },},{id: "projects-rtgs",
           title: 'RTGS',
           description: "RealTimeGNSS Studio, a Python project for practical real-time GNSS workflows.",
