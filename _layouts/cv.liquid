@@ -1,468 +1,210 @@
 ---
 layout: default
 ---
-{% comment %}
-  Unified CV layout that handles both RenderCV (YAML) and JSONResume (JSON) formats
-  - If page.cv_format is set, it determines which format to render:
-    - 'rendercv': Load and render only RenderCV data (site.data.cv.cv)
-    - 'jsonresume': Load and render only JSONResume data (site.data.resume)
-  - If page.cv_format is not set, the legacy behavior applies:
-    - RenderCV data is in site.data.cv.cv
-    - JSONResume data is in site.data.resume
-    - RenderCV is prioritized if both exist
-  Both formats use the same unified rendering includes for consistent output
-{% endcomment %}
+{% assign resume = site.data.resume %}
 
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      <span data-lang-en>{{ page.title }}</span>
-      <span data-lang-zh>{{ page.nav_title_zh | default: page.title }}</span>
-      {% if page.cv_pdf %}
-        <a
-          {% if page.cv_pdf contains '://' %}
-            href="{{ page.cv_pdf }}"
-          {% else %}
-            href="{{ page.cv_pdf | relative_url }}"
-          {% endif %}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="float-right"
-        >
-          <i class="fa-solid fa-file-pdf"></i>
-        </a>
-      {% endif %}
-    </h1>
-    {% if page.description %}
-      <p class="post-description">{{ page.description }}</p>
-    {% endif %}
-  </header>
+<div class="post cv-page">
+  <article class="cv-resume" aria-labelledby="cv-name">
+    <header class="cv-resume-header">
+      <div class="cv-identity">
+        <h1 id="cv-name">
+          {{ resume.basics.name }}
+          {% if resume.basics.name_zh -%}
+            <span>{{ resume.basics.name_zh }}</span>
+          {%- endif %}
+        </h1>
+        <p class="cv-role">{{ resume.basics.label }}</p>
+        <p class="cv-affiliation">{{ resume.basics.affiliation }}</p>
+      </div>
 
-  <article>
-    <div class="cv">
-      {% comment %} Determine which CV format to render {% endcomment %}
-      {% assign render_rendercv = false %}
-      {% assign render_jsonresume = false %}
-
-      {% if page.cv_format == 'rendercv' %}
-        {% assign render_rendercv = true %}
-      {% elsif page.cv_format == 'jsonresume' %}
-        {% assign render_jsonresume = true %}
-      {% else %}
-        {% comment %} Legacy behavior: RenderCV takes priority if both exist {% endcomment %}
-        {% if site.data.cv and site.data.cv.cv %}
-          {% assign render_rendercv = true %}
-        {% elsif site.data.resume %}
-          {% assign render_jsonresume = true %}
+      <ul class="cv-contact" aria-label="Contact information">
+        {% if resume.basics.email %}
+          <li>
+            <a href="mailto:{{ resume.basics.email }}">{{ resume.basics.email }}</a>
+          </li>
         {% endif %}
-      {% endif %}
-
-      {% if render_rendercv and site.data.cv and site.data.cv.cv %}
-        {% comment %} RenderCV format {% endcomment %}
-        {% assign cv = site.data.cv.cv %}
-
-        <!-- Header/Contact Information -->
-        {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Contact Information</span>
-              <span data-lang-zh>联系方式</span>
-            </h3>
-            <table class="table table-cv table-sm table-borderless">
-              {% if cv.name %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.name }}</td>
-                </tr>
-              {% endif %}
-              {% if cv.label %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.label }}</td>
-                </tr>
-              {% endif %}
-              {% if cv.email %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.email }}</td>
-                </tr>
-              {% endif %}
-              {% if cv.phone %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.phone }}</td>
-                </tr>
-              {% endif %}
-              {% if cv.address %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
-                  <td class="p-1 pl-2 font-weight-light">
-                    {% if cv.address.street %}{{ cv.address.street }}, {% endif %}
-                    {% if cv.address.city %}{{ cv.address.city }}, {% endif %}
-                    {% if cv.address.region %}{{ cv.address.region }} {% endif %}
-                    {% if cv.address.postalCode %}{{ cv.address.postalCode }}{% endif %}
-                  </td>
-                </tr>
-              {% endif %}
-              {% if cv.website %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Website</b></td>
-                  <td class="p-1 pl-2 font-weight-light">
-                    <a href="{{ cv.website }}" target="_blank">{{ cv.website }}</a>
-                  </td>
-                </tr>
-              {% endif %}
-            </table>
-          </div>
+        {% if resume.basics.url %}
+          <li><a href="{{ resume.basics.url }}">haoruixian.github.io</a></li>
         {% endif %}
-
-        <!-- Summary -->
-        {% if cv.summary %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Professional Summary</span>
-              <span data-lang-zh>个人简介</span>
-            </h3>
-            <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-          </div>
-        {% endif %}
-
-        <!-- RenderCV Sections - Merge Experience and Volunteer -->
-        {% comment %} First, combine Experience and Volunteer entries {% endcomment %}
-        {% assign empty_array = '' | split: ',' %}
-        {% assign exp = cv.sections.Experience | default: empty_array %}
-        {% assign vol = cv.sections.Volunteer | default: empty_array %}
-        {% assign combined_experience = exp | concat: vol %}
-        {% if combined_experience.size > 0 %}
-          <a class="anchor" id="experience"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Experience</span>
-              <span data-lang-zh>经历</span>
-            </h3>
-            <div>
-              {% assign entries = combined_experience %}
-              {% include cv/experience.liquid %}
-            </div>
-          </div>
-        {% endif %}
-
-        {% comment %} Now render all other sections except Experience and Volunteer {% endcomment %}
-        {% for section_pair in cv.sections %}
-          {% assign section_title = section_pair[0] %}
-          {% assign section_entries = section_pair[1] %}
-
-          {% comment %} Skip Experience and Volunteer as we've already processed them combined {% endcomment %}
-          {% if section_title == 'Experience' or section_title == 'Volunteer' %}
-            {% continue %}
-          {% endif %}
-
-          <a class="anchor" id="{{ section_title | slugify }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              {% if section_title == 'Education' %}
-                <span data-lang-en>Education</span>
-                <span data-lang-zh>教育背景</span>
-              {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' %}
-                <span data-lang-en>{{ section_title }}</span>
-                <span data-lang-zh>荣誉奖项</span>
-              {% elsif section_title == 'Publications' %}
-                <span data-lang-en>Publications</span>
-                <span data-lang-zh>学术成果</span>
-              {% elsif section_title == 'Skills' %}
-                <span data-lang-en>Skills</span>
-                <span data-lang-zh>技能</span>
-              {% elsif section_title == 'Languages' %}
-                <span data-lang-en>Languages</span>
-                <span data-lang-zh>语言</span>
-              {% elsif section_title == 'Interests' or section_title == 'Academic Interests' %}
-                <span data-lang-en>{{ section_title }}</span>
-                <span data-lang-zh>研究兴趣</span>
-              {% elsif section_title == 'Certificates' %}
-                <span data-lang-en>Certificates</span>
-                <span data-lang-zh>证书</span>
-              {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' %}
-                <span data-lang-en>{{ section_title }}</span>
-                <span data-lang-zh>项目经历</span>
-              {% elsif section_title == 'References' %}
-                <span data-lang-en>References</span>
-                <span data-lang-zh>推荐人</span>
-              {% else %}
-                {{ section_title }}
-              {% endif %}
-            </h3>
-            <div>
-              {% if section_title == 'Education' %}
-                {% assign entries = section_entries %}
-                {% include cv/education.liquid %}
-              {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' %}
-                {% assign entries = section_entries %}
-                {% include cv/awards.liquid %}
-              {% elsif section_title == 'Publications' %}
-                {% assign entries = section_entries %}
-                {% include cv/publications.liquid %}
-              {% elsif section_title == 'Skills' %}
-                {% assign entries = section_entries %}
-                {% include cv/skills.liquid %}
-              {% elsif section_title == 'Languages' %}
-                {% assign entries = section_entries %}
-                {% include cv/languages.liquid %}
-              {% elsif section_title == 'Interests' or section_title == 'Academic Interests' %}
-                {% assign entries = section_entries %}
-                {% include cv/interests.liquid %}
-              {% elsif section_title == 'Certificates' %}
-                {% assign entries = section_entries %}
-                {% include cv/certificates.liquid %}
-              {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' %}
-                {% assign entries = section_entries %}
-                {% include cv/projects.liquid %}
-              {% elsif section_title == 'References' %}
-                {% assign entries = section_entries %}
-                {% include cv/references.liquid %}
-              {% else %}
-                <!-- Generic section -->
-                {% for entry in section_entries %}
-                  {% if entry.bullet %}
-                    <ul class="card-text font-weight-light list-group list-group-flush">
-                      <li class="list-group-item">{{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-                    </ul>
-                  {% elsif entry.label %}
-                    <div class="card-text font-weight-light">
-                      <strong>{{ entry.label }}:</strong> {{ entry.details }}
-                    </div>
-                  {% endif %}
-                {% endfor %}
-              {% endif %}
-            </div>
-          </div>
+        {% for profile in resume.basics.profiles %}
+          <li>
+            <a href="{{ profile.url }}">{{ profile.network }}</a>
+          </li>
         {% endfor %}
+        {% if resume.basics.location %}
+          <li>{{ resume.basics.location.city }}, {{ resume.basics.location.countryCode }}</li>
+        {% endif %}
+      </ul>
 
-      {% elsif render_jsonresume and site.data.resume %}
-        {% comment %} JSONResume format {% endcomment %}
+      {% if resume.basics.summary %}
+        <p class="cv-summary">{{ resume.basics.summary }}</p>
+      {% endif %}
+    </header>
 
-        <!-- Contact Information -->
-        {% if site.data.resume.basics %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Contact Information</span>
-              <span data-lang-zh>联系方式</span>
-            </h3>
-            {% assign basics = site.data.resume.basics %}
-            <table class="table table-cv table-sm table-borderless">
-              {% if basics.name %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ basics.name }}</td>
-                </tr>
+    {% if resume.education.size > 0 %}
+      <section class="cv-section" aria-labelledby="cv-education">
+        <h2 id="cv-education">
+          <span data-lang-en>Education</span>
+          <span data-lang-zh>教育背景</span>
+        </h2>
+        <div class="cv-entry-list">
+          {% for entry in resume.education %}
+            <div class="cv-entry">
+              <div class="cv-entry-date">{{ entry.displayDate }}</div>
+              <div class="cv-entry-body">
+                <h3>{{ entry.studyType }} in {{ entry.area }}</h3>
+                <div class="cv-entry-meta">
+                  <strong>{{ entry.institution }}</strong>
+                  <span>{{ entry.location }}</span>
+                </div>
+                {% if entry.highlights %}
+                  <ul>
+                    {% for item in entry.highlights %}
+                      <li>{{ item }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if resume.work.size > 0 %}
+      <section class="cv-section" aria-labelledby="cv-research-experience">
+        <h2 id="cv-research-experience">
+          <span data-lang-en>Research Experience</span>
+          <span data-lang-zh>科研经历</span>
+        </h2>
+        <div class="cv-entry-list">
+          {% for entry in resume.work %}
+            <div class="cv-entry">
+              <div class="cv-entry-date">{{ entry.displayDate }}</div>
+              <div class="cv-entry-body">
+                <h3>{{ entry.position }}</h3>
+                <div class="cv-entry-meta">
+                  <strong>{{ entry.name }}</strong>
+                  <span>{{ entry.location }}</span>
+                </div>
+                {% if entry.highlights %}
+                  <ul>
+                    {% for item in entry.highlights %}
+                      <li>{{ item }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if resume.projects.size > 0 %}
+      <section class="cv-section" aria-labelledby="cv-projects">
+        <h2 id="cv-projects">
+          <span data-lang-en>Selected Research and Open-Source Projects</span>
+          <span data-lang-zh>代表性科研与开源项目</span>
+        </h2>
+        <div class="cv-project-grid">
+          {% for entry in resume.projects %}
+            <div class="cv-project">
+              <h3>
+                {% if entry.url -%}
+                  <a href="{{ entry.url }}">{{ entry.name }}</a>
+                {%- else -%}
+                  {{- entry.name -}}
+                {%- endif %}
+              </h3>
+              <p>{{ entry.summary }}</p>
+              {% if entry.highlights %}
+                <ul>
+                  {% for item in entry.highlights %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
               {% endif %}
-              {% if basics.label %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ basics.label }}</td>
-                </tr>
-              {% endif %}
-              {% if basics.email %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ basics.email }}</td>
-                </tr>
-              {% endif %}
-              {% if basics.phone %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ basics.phone }}</td>
-                </tr>
-              {% endif %}
-              {% if basics.location %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
-                  <td class="p-1 pl-2 font-weight-light">
-                    {% if basics.location.address %}{{ basics.location.address }}, {% endif %}
-                    {% if basics.location.city %}{{ basics.location.city }}, {% endif %}
-                    {% if basics.location.region %}{{ basics.location.region }} {% endif %}
-                    {% if basics.location.postalCode %}{{ basics.location.postalCode }}{% endif %}
-                  </td>
-                </tr>
-              {% endif %}
-              {% if basics.url %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Website</b></td>
-                  <td class="p-1 pl-2 font-weight-light">
-                    <a href="{{ basics.url }}" target="_blank">{{ basics.url }}</a>
-                  </td>
-                </tr>
-              {% endif %}
-            </table>
-          </div>
-        {% endif %}
-
-        <!-- Summary -->
-        {% if site.data.resume.basics.summary %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Professional Summary</span>
-              <span data-lang-zh>个人简介</span>
-            </h3>
-            <p>{{ site.data.resume.basics.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-          </div>
-        {% endif %}
-
-        <!-- JSONResume Sections - Merge work and volunteer into Experience -->
-        {% assign empty_array = '' | split: ',' %}
-        {% assign work = site.data.resume.work | default: empty_array %}
-        {% assign vol = site.data.resume.volunteer | default: empty_array %}
-        {% assign combined_experience = work | concat: vol %}
-        {% if combined_experience.size > 0 %}
-          <a class="anchor" id="experience"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Experience</span>
-              <span data-lang-zh>经历</span>
-            </h3>
-            <div>
-              {% assign entries = combined_experience %}
-              {% include cv/experience.liquid %}
             </div>
-          </div>
-        {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
 
-        <!-- Education -->
-        {% if site.data.resume.education.size > 0 %}
-          <a class="anchor" id="education"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Education</span>
-              <span data-lang-zh>教育背景</span>
-            </h3>
-            <div>
-              {% assign entries = site.data.resume.education %}
-              {% include cv/education.liquid %}
-            </div>
-          </div>
-        {% endif %}
+    {% if resume.publications.size > 0 %}
+      <section class="cv-section cv-publications" aria-labelledby="cv-publications">
+        <h2 id="cv-publications">
+          <span data-lang-en>Selected Publications</span>
+          <span data-lang-zh>代表性论文</span>
+        </h2>
+        <p class="cv-section-note">
+          <span data-lang-en>APA style; selected first- and second-author publications. Ruixian Hao is shown in bold.</span>
+          <span data-lang-zh>APA 格式；仅列第一、第二作者论文，郝睿贤以粗体标出。</span>
+        </p>
+        <ol class="cv-publication-list">
+          {% for entry in resume.publications %}
+            <li>{{ entry.citation | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+          {% endfor %}
+        </ol>
+      </section>
+    {% endif %}
 
-        <!-- Awards -->
-        {% if site.data.resume.awards.size > 0 %}
-          <a class="anchor" id="awards"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Awards</span>
-              <span data-lang-zh>荣誉奖项</span>
-            </h3>
-            <div>
-              {% assign entries = site.data.resume.awards %}
-              {% include cv/awards.liquid %}
-            </div>
-          </div>
+    {% if resume.awards.size > 0 %}
+      <section class="cv-section" aria-labelledby="cv-awards">
+        <h2 id="cv-awards">
+          <span data-lang-en>Honors and Awards</span>
+          <span data-lang-zh>荣誉奖项</span>
+        </h2>
+        {% if resume.awards_note %}
+          <p class="cv-section-note">{{ resume.awards_note }}</p>
         {% endif %}
+        <ul class="cv-award-list">
+          {% for entry in resume.awards %}
+            <li>
+              <span class="cv-award-year">{{ entry.year }}</span>
+              <span
+                ><strong>{{ entry.title }}</strong>
+                {%- if entry.awarder %}, {{ entry.awarder }}{% endif -%}
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
 
-        <!-- Publications -->
-        {% if site.data.resume.publications.size > 0 %}
-          <a class="anchor" id="publications"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Publications</span>
-              <span data-lang-zh>学术成果</span>
-            </h3>
-            <div>
-              {% assign entries = site.data.resume.publications %}
-              {% include cv/publications.liquid %}
-            </div>
-          </div>
-        {% endif %}
+    <div class="cv-bottom-grid">
+      {% if resume.skills.size > 0 %}
+        <section class="cv-section" aria-labelledby="cv-skills">
+          <h2 id="cv-skills">
+            <span data-lang-en>Research and Technical Skills</span>
+            <span data-lang-zh>研究与技术技能</span>
+          </h2>
+          <dl class="cv-skill-list">
+            {% for entry in resume.skills %}
+              <div>
+                <dt>{{ entry.name }}</dt>
+                <dd>{{ entry.keywords | join: ', ' }}</dd>
+              </div>
+            {% endfor %}
+          </dl>
+        </section>
+      {% endif %}
 
-        <!-- Skills -->
-        {% if site.data.resume.skills.size > 0 %}
-          <a class="anchor" id="skills"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Skills</span>
-              <span data-lang-zh>技能</span>
-            </h3>
-            <div>
-              {% assign entries = site.data.resume.skills %}
-              {% include cv/skills.liquid %}
-            </div>
-          </div>
-        {% endif %}
-
-        <!-- Languages -->
-        {% if site.data.resume.languages.size > 0 %}
-          <a class="anchor" id="languages"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Languages</span>
-              <span data-lang-zh>语言</span>
-            </h3>
-            <div>
-              {% assign entries = site.data.resume.languages %}
-              {% include cv/languages.liquid %}
-            </div>
-          </div>
-        {% endif %}
-
-        <!-- Interests -->
-        {% if site.data.resume.interests.size > 0 %}
-          <a class="anchor" id="interests"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Interests</span>
-              <span data-lang-zh>研究兴趣</span>
-            </h3>
-            <div>
-              {% assign entries = site.data.resume.interests %}
-              {% include cv/interests.liquid %}
-            </div>
-          </div>
-        {% endif %}
-
-        <!-- Certificates -->
-        {% if site.data.resume.certificates.size > 0 %}
-          <a class="anchor" id="certificates"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Certificates</span>
-              <span data-lang-zh>证书</span>
-            </h3>
-            <div>
-              {% assign entries = site.data.resume.certificates %}
-              {% include cv/certificates.liquid %}
-            </div>
-          </div>
-        {% endif %}
-
-        <!-- Projects -->
-        {% if site.data.resume.projects.size > 0 %}
-          <a class="anchor" id="projects"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>Projects</span>
-              <span data-lang-zh>项目经历</span>
-            </h3>
-            <div>
-              {% assign entries = site.data.resume.projects %}
-              {% include cv/projects.liquid %}
-            </div>
-          </div>
-        {% endif %}
-
-        <!-- References -->
-        {% if site.data.resume.references.size > 0 %}
-          <a class="anchor" id="references"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">
-              <span data-lang-en>References</span>
-              <span data-lang-zh>推荐人</span>
-            </h3>
-            <div>
-              {% assign entries = site.data.resume.references %}
-              {% include cv/references.liquid %}
-            </div>
-          </div>
-        {% endif %}
-
-      {% else %}
-        <p>No CV data found. Please configure either RenderCV (cv.yml) or JSONResume (resume.json) data.</p>
+      {% if resume.languages.size > 0 %}
+        <section class="cv-section" aria-labelledby="cv-languages">
+          <h2 id="cv-languages">
+            <span data-lang-en>Languages</span>
+            <span data-lang-zh>语言能力</span>
+          </h2>
+          <dl class="cv-language-list">
+            {% for entry in resume.languages %}
+              <div>
+                <dt>{{ entry.language }}</dt>
+                <dd>{{ entry.fluency }}</dd>
+              </div>
+            {% endfor %}
+          </dl>
+        </section>
       {% endif %}
     </div>
   </article>

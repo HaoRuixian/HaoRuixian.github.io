@@ -195,6 +195,358 @@ ul.timeline li::before {
   top: -0.5rem;
 }
 
+/*****************************
+ * Compact academic resume
+ *****************************/
+
+.cv-page {
+  margin-top: 1.5rem;
+}
+
+.cv-resume {
+  width: min(100%, 210mm);
+  margin: 0 auto;
+  padding: 2rem 2.25rem;
+  color: var(--global-text-color);
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+.cv-resume a {
+  color: inherit;
+  text-decoration-color: var(--global-theme-color);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.cv-resume-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.35rem 2rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 2px solid var(--global-text-color);
+}
+
+.cv-identity h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.cv-identity h1 span {
+  margin-left: 0.5rem;
+  color: var(--global-text-color-light);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.cv-role {
+  margin: 0.35rem 0 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cv-affiliation {
+  margin: 0.12rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.82rem;
+}
+
+.cv-contact {
+  display: grid;
+  align-content: start;
+  justify-items: end;
+  gap: 0.08rem;
+  margin: 0;
+  padding: 0;
+  font-size: 0.78rem;
+  list-style: none;
+}
+
+.cv-summary {
+  grid-column: 1 / -1;
+  max-width: 68rem;
+  margin: 0.5rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.83rem;
+  line-height: 1.45;
+}
+
+.cv-section {
+  margin-top: 1rem;
+}
+
+.cv-section h2 {
+  margin: 0 0 0.55rem;
+  padding-bottom: 0.25rem;
+  color: var(--global-text-color);
+  border-bottom: 1px solid var(--global-divider-color);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.cv-entry-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: 7.4rem minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.cv-entry-date,
+.cv-award-year {
+  color: var(--global-text-color-light);
+  font-size: 0.76rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.cv-entry-body h3,
+.cv-project h3 {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.cv-entry-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.12rem;
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+}
+
+.cv-entry-body ul,
+.cv-project ul {
+  margin: 0.28rem 0 0;
+  padding-left: 1.05rem;
+  font-size: 0.79rem;
+  line-height: 1.42;
+}
+
+.cv-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.4rem;
+}
+
+.cv-project p {
+  margin: 0.24rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.cv-section-note {
+  margin: -0.12rem 0 0.5rem;
+  color: var(--global-text-color-light);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.cv-publication-list {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding-left: 1.35rem;
+  font-size: 0.79rem;
+  line-height: 1.42;
+}
+
+.cv-publication-list li {
+  padding-left: 0.2rem;
+}
+
+.cv-publication-list p {
+  display: inline;
+  margin: 0;
+}
+
+.cv-award-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.38rem 1.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cv-award-list li {
+  display: grid;
+  grid-template-columns: 4.2rem minmax(0, 1fr);
+  gap: 0.45rem;
+  font-size: 0.74rem;
+  line-height: 1.34;
+}
+
+.cv-bottom-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(12rem, 1fr);
+  gap: 1.4rem;
+}
+
+.cv-skill-list,
+.cv-language-list {
+  display: grid;
+  gap: 0.28rem;
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.cv-skill-list div,
+.cv-language-list div {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  gap: 0.5rem;
+}
+
+.cv-skill-list dt,
+.cv-language-list dt {
+  font-weight: 700;
+}
+
+.cv-skill-list dd,
+.cv-language-list dd {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .cv-page {
+    margin-top: 0.75rem;
+  }
+
+  .cv-resume {
+    padding: 1.25rem 1rem;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .cv-resume-header,
+  .cv-project-grid,
+  .cv-award-list,
+  .cv-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-contact {
+    justify-items: start;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 0.35rem;
+  }
+
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .cv-entry-meta {
+    display: block;
+  }
+
+  .cv-entry-meta span {
+    display: block;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm 12mm;
+  }
+
+  html,
+  body {
+    width: auto !important;
+    min-width: 0 !important;
+    color: #111 !important;
+    background: #fff !important;
+    font-size: 9pt;
+  }
+
+  body {
+    padding: 0 !important;
+  }
+
+  nav,
+  footer,
+  .progress-container,
+  #back-to-top {
+    display: none !important;
+  }
+
+  .container {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .cv-page {
+    margin: 0 !important;
+  }
+
+  .cv-resume {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    color: #111;
+    background: #fff;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .cv-resume a {
+    color: #111 !important;
+    text-decoration: none;
+  }
+
+  .cv-resume-header {
+    border-color: #111;
+  }
+
+  .cv-identity h1 {
+    font-size: 19pt;
+  }
+
+  .cv-identity h1 span,
+  .cv-affiliation,
+  .cv-summary,
+  .cv-entry-date,
+  .cv-entry-meta,
+  .cv-project p,
+  .cv-section-note,
+  .cv-award-year {
+    color: #444 !important;
+  }
+
+  .cv-section {
+    break-inside: avoid;
+    margin-top: 3.2mm;
+  }
+
+  .cv-publications {
+    break-before: page;
+  }
+
+  .cv-project,
+  .cv-entry,
+  .cv-publication-list li,
+  .cv-award-list li {
+    break-inside: avoid;
+  }
+}
+
 /*ul.timeline::before {
      content: "●";
      font-size: 1em;

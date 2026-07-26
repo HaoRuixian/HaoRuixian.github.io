@@ -1,183 +1,154 @@
 basics:
   name: Ruixian Hao
-  label: Graduate student in Geomatics Science and Technology
+  name_zh: 郝睿贤
+  label: M.S. Student in Surveying and Mapping Science and Technology
+  affiliation: College of Geoscience and Surveying Engineering, China University of Mining and Technology - Beijing
   email: vitamin_n@outlook.com
-  phone: "+86 13096649698"
   url: https://haoruixian.github.io
   location:
     city: Beijing
-    countryCode: CN
+    countryCode: China
+  profiles:
+    - network: GitHub
+      url: https://github.com/HaoRuixian
+    - network: ResearchGate
+      url: https://www.researchgate.net/profile/Ruixian-Hao/
   summary: >
-    Ruixian Hao works on geoscience applications of low-cost GNSS receivers,
-    high-precision GNSS-IR/GNSS-MR algorithms, and key tropospheric parameters
-    for GNSS meteorology and atmospheric remote sensing. His recent work
-    includes the ERA5-SH global scale-height dataset and GMR-Water, a MATLAB
-    software package for multi-GNSS water-level retrieval.
+    Master's student working on GNSS meteorology, tropospheric parameter modeling,
+    atmospheric water vapor, and GNSS reflectometry for water-level and sea-surface-height retrieval.
 
 education:
   - institution: China University of Mining and Technology - Beijing
-    location: Beijing, China
-    area: Geomatics Science and Technology
+    area: Surveying and Mapping Science and Technology
     studyType: M.S.
-    startDate: 2025-09-01
-    endDate: 2028-06-30
+    displayDate: Sep 2025 - Present
+    location: Beijing, China
     highlights:
-      - Recommended graduate admission after ranking first in the undergraduate major for three consecutive years.
+      - Expected graduation in June 2028; research focuses on GNSS meteorology, atmospheric remote sensing, and GNSS reflectometry.
 
   - institution: China University of Mining and Technology - Beijing
-    location: Beijing, China
-    area: Surveying and Mapping Engineering
+    area: Surveying Engineering
     studyType: B.Eng.
-    startDate: 2021-09-01
-    endDate: 2025-06-30
+    displayDate: Sep 2021 - Jun 2025
+    location: Beijing, China
     highlights:
-      - Major coursework includes Advanced Mathematics, Linear Algebra, GNSS Principles and Applications, and Digital Remote Sensing Image Processing.
+      - Ranked first in the major for three consecutive years and received recommended admission to the master's program.
 
 work:
-  - name: National Key Laboratory of Air-ground Integrated New Navigation System Technology, Beihang University
+  - name: National Key Laboratory of Air-Ground Integrated New Navigation System Technology, Beihang University
     position: Research Intern
+    displayDate: Jul 2024 - Sep 2024
     location: Beijing, China
-    startDate: 2024-07-01
-    endDate: 2024-09-30
-    summary: GNSS ionospheric scintillation and civil aviation positioning.
     highlights:
-      - Studied the influence of ionospheric scintillation on ADS-B-based civil aviation trajectories.
-      - Estimated scintillation indicators from dual-frequency ionosphere-free GNSS carrier-phase combinations after removing satellite clock, tropospheric delay, and relativistic effects.
+      - Investigated ionospheric-scintillation effects on ADS-B civil-aviation trajectories using dual-frequency GNSS carrier-phase combinations.
+      - Removed satellite-clock, tropospheric, and relativistic effects to estimate residual-based scintillation indicators.
 
-volunteer:
-  - organization: Student Union, College of Geoscience and Surveying Engineering, China University of Mining and Technology - Beijing
-    position: Academic Affairs Department Member
-    location: Beijing, China
-    startDate: 2021-09-01
-    endDate: 2023-06-30
-    summary: Academic activity organization and student service.
+projects:
+  - name: ERA5-SH Global Scale-Height Dataset
+    url: https://github.com/HaoRuixian/ERA5-SH-dataset-for-troposphere-parameters-code-for-estimate-and-analysis
+    summary: Reproducible global dataset and processing workflow for tropospheric-parameter scale heights derived from ERA5 profiles.
     highlights:
-      - Organized and hosted debate competitions and the Jingwei Cup professional-skills competition.
-      - Received Department Star and Outstanding Student Cadre honors.
+      - Estimated ZTD, ZHD, ZWD, Tm, PWV, and WVD scale heights and validated them with 591 radiosonde stations.
+      - Published as a first-author Scientific Data paper; data released on Zenodo with 2,873 combined downloads as of July 9, 2026.
 
-awards:
-  - title: 中国矿业大学（北京）2025年“挑战杯”大学生课外学术作品竞赛
-    date: 2025-06-01
-    awarder: First Prize
-    summary: "Team members: Ruixian Hao, Yuhao Zhang, Zhuoyue Wen, Xinying Han."
-
-  - title: “青创北京”2025年“挑战杯”首都大学生课外学术作品竞赛主体赛
-    date: 2025-06-01
-    awarder: Second Prize
-    summary: "Team members: Ruixian Hao, Yuhao Zhang, Zhuoyue Wen, Xinying Han."
-
-  - title: 地球科学与测绘工程学院2025年大学生创新创业大赛院赛
-    date: 2025-03-01
-    awarder: First Prize
-    summary: "Team members: Ruixian Hao, Rui Yang, Yajun Zhang, et al."
-
-  - title: 中国国际大学生创新大赛（2025）北京赛区
-    date: 2025-08-01
-    awarder: Third Prize
-    summary: "Team members: Ruixian Hao, Rui Yang, Yuhao Zhang, et al."
-
-  - title: 智能与协同·2025第十三届高校GIS论坛创新创业大赛
-    date: 2025-11-01
-    awarder: Second Prize
-    summary: "Team members: Ruixian Hao, Haoyu Wang, Weicong Chen, Junxi Zheng."
-
-  - title: National Scholarship
-    date: 2023-01-01
-    awarder: Ministry of Education of China
-    summary: Awarded in the 2021-2022 and 2022-2023 academic years.
-
-  - title: National Encouragement Scholarship
-    date: 2024-01-01
-    awarder: Ministry of Education of China
-    summary: Awarded in the 2023-2024 academic year.
-
-  - title: National College Students Surveying and Mapping Innovation and Entrepreneurship Intelligent Competition
-    date: 2023-01-01
-    awarder: Second Prize
-    summary: National-level surveying and mapping innovation competition.
+  - name: GMR-Water
+    url: https://github.com/HaoRuixian/GNSS-IR-Kit
+    summary: Open-source MATLAB software for multi-GNSS, multi-frequency, and multi-observation GNSS-MR water-level retrieval.
+    highlights:
+      - Supports SNR, carrier-phase, and pseudorange strategies, batch processing, quality control, visualization, and accuracy evaluation.
+      - Published as a second-author GPS Solutions software paper.
 
 publications:
-  - title: "ERA5-SH: A global gridded scale height dataset for tropospheric parameters based on ERA5 reanalysis"
-    releaseDate: 2025-03-01
-    publisher: Scientific Data
-    url: https://doi.org/10.1038/s41597-025-04714-5
-    summary: Ruixian Hao, Fei Yang, Zhicai Li, Yuhao Zhang, Lv Zhou, Lei Wang.
+  - citation: >
+      **Hao, R.**, Yang, F., Li, Z., Zhang, Y., Zhou, L., & Wang, L. (2025).
+      ERA5-SH: A global gridded scale height dataset for tropospheric parameters based on ERA5 reanalysis.
+      *Scientific Data, 12*(1).
 
-  - title: Spatial-temporal variation of water vapor scale height and its impact factors in different climate zones of China
-    releaseDate: 2024-08-01
-    publisher: Advances in Space Research
-    url: https://doi.org/10.1016/j.asr.2024.04.047
-    summary: Ruixian Hao, Tairan Xu, Zhicai Li, Fei Yang, Zemin Hao, Juntao Tan, Yongzhi Gao, Zhiyi Shu.
+  - citation: >
+      **Hao, R.**, Yang, F., Chen, W., Li, Z., Wang, L., Yang, R., & Zhang, Y. (2025).
+      地基北斗多信息海面高反射测量方法及精度分析.
+      *全球定位系统, 50*(2), 46-53.
 
-  - title: "GMR-Water: A water level retrieval software for multi-GNSS, multi-frequency and multi-observation based on GNSS-MR"
-    releaseDate: 2026-01-01
-    publisher: GPS Solutions
-    url: https://doi.org/10.1007/s10291-026-02111-y
-    summary: Fei Yang, Ruixian Hao.
+  - citation: >
+      **Hao, R.**, Xu, T., Li, Z., Yang, F., Hao, Z., Tan, J., Gao, Y., & Shu, Z. (2024).
+      Spatial-temporal variation of water vapor scale height and its impact factors in different climate zones of China.
+      *Advances in Space Research, 74*(4), 1576-1585.
 
-  - title: 地基北斗多信息海面高反射测量方法及精度分析
-    releaseDate: 2025-01-01
-    publisher: 全球定位系统
-    summary: 郝睿贤，杨飞，陈维聪，李志才，王磊，杨锐，张雅竣。
+  - citation: >
+      Yang, F., & **Hao, R.** (2026).
+      GMR-water: A water level retrieval software for multi-GNSS, multi-frequence and multi-observation based on GNSS-MR.
+      *GPS Solutions, 30*(3).
 
-  - title: Spatio-temporal evaluation of tropospheric delay products in China using CMONOC data as reference
-    releaseDate: 2025-01-01
-    publisher: Advances in Space Research
-    summary: Zhuoyue Wen, Fei Yang, Jian Li, Ruixian Hao, Tianyang Liu, Zhuangzhuang Wang.
+  - citation: >
+      Yang, F., **Hao, R.**, Wang, H., Wang, L., Li, Z., Zheng, J., Wang, Y., & Chen, R. (2025).
+      An optimal method for GNSS water vapor tomography based on parameter adaptation.
+      *GPS Solutions, 30*(1).
 
-  - title: "Comparing discrete and empirical troposphere delay models: A global IGS-based evaluation"
-    releaseDate: 2024-06-01
-    publisher: Radio Science
-    url: https://doi.org/10.1029/2024RS008024
-    summary: Yifan Yao, Fei Yang, Jian Li, Lei Wang, Junxi Zheng, Ruixian Hao, Tairan Xu.
+awards_note: All competition awards list Ruixian Hao as the first-listed or sole awardee.
+awards:
+  - title: National Scholarship (two consecutive academic years)
+    year: 2022-2023
+    awarder: Ministry of Education of China
 
-  - title: GNSS water vapor tomography based on Kalman filter with optimized noise covariance
-    releaseDate: 2023-10-01
-    publisher: GPS Solutions
-    url: https://doi.org/10.1007/s10291-023-01523-4
-    summary: Fei Yang, Xu Gong, Yingying Wang, Mingjia Liu, Jian Li, Tairan Xu, Ruixian Hao.
+  - title: National Encouragement Scholarship
+    year: 2024
+    awarder: Ministry of Education of China
+
+  - title: Second Prize, National Surveying and Mapping Discipline Innovation and Entrepreneurship Competition
+    year: 2023
+    awarder: National level
+
+  - title: Third Prize, China International College Students' Innovation Competition, Beijing Division
+    year: 2025
+    awarder: Beijing municipal level
+
+  - title: Second Prize, Qingchuang Beijing Challenge Cup
+    year: 2025
+    awarder: Beijing municipal level
+
+  - title: Second Prize, 13th University GIS Forum Innovation and Entrepreneurship Competition
+    year: 2025
+    awarder: Intercollegiate level
+
+  - title: First Prize, Challenge Cup Extracurricular Academic Works Competition
+    year: 2025
+    awarder: China University of Mining and Technology - Beijing
+
+  - title: First Prize, College Student Innovation and Entrepreneurship Competition
+    year: 2025
+    awarder: College of Geoscience and Surveying Engineering
+
+  - title: Special-Class Scholarship (twice) and First-Class Scholarship
+    year: 2021-2024
+    awarder: China University of Mining and Technology - Beijing
 
 skills:
   - name: Research
     keywords:
       - GNSS meteorology
-      - Tropospheric delay modeling
-      - Water vapor tomography
-      - GNSS-MR/GNSS-IR reflectometry
-      - ERA5 reanalysis
+      - tropospheric delay modeling
+      - water vapor tomography
+      - GNSS-MR/GNSS-IR
+      - atmospheric remote sensing
 
-  - name: Programming and tools
+  - name: Methods
+    keywords:
+      - ERA5 reanalysis
+      - radiosonde validation
+      - Kalman filtering
+      - GNSS data processing
+      - scientific visualization
+
+  - name: Programming
     keywords:
       - MATLAB
       - Python
       - C
       - RTKLIB
-      - GNSS data processing
+      - RINEX processing
 
 languages:
   - language: Chinese
-    fluency: Native speaker
+    fluency: Native
   - language: English
     fluency: Academic reading and writing
-
-projects:
-  - name: ERA5-SH Dataset
-    url: https://github.com/HaoRuixian/ERA5-SH-dataset-for-troposphere-parameters-code-for-estimate-and-analysis
-    summary: Global gridded scale-height dataset for ZTD, ZHD, ZWD, Tm, PWV, and WVD derived from ERA5 reanalysis profiles.
-    highlights:
-      - Built exponential-fitting workflows for tropospheric-parameter scale heights.
-      - Validated products with global radiosonde-derived scale heights.
-      - Dataset released on Zenodo in two parts with 2,873 combined downloads as of 2026-07-09.
-
-  - name: GMR-Water
-    url: https://github.com/HaoRuixian/GNSS-IR-Kit
-    summary: MATLAB software for GNSS-MR water-level retrieval with multi-GNSS, multi-frequency, and multi-observation processing.
-    highlights:
-      - Supports SNR, carrier-phase, and pseudo-range retrieval strategies.
-      - Provides GUI, quality control, visualization, and accuracy-evaluation workflows.
-
-  - name: Water Vapor Scale Height in China Climate Zones
-    summary: Analysis of water vapor scale-height variation and driving factors across Chinese climate zones.
-    highlights:
-      - Used radiosonde observations from 89 stations during 2016-2019.
-      - Quantified spatial-temporal patterns and potential impacts on GNSS water vapor modeling.
