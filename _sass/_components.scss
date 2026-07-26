@@ -226,10 +226,18 @@ ul.task-list input[type="checkbox"] {
       min-height: 210px;
 
       .project-card-media {
+        flex: 0 0 41.6667%;
+        max-width: 41.6667%;
         height: 210px;
         aspect-ratio: auto;
+        padding: 0;
         border-right: 1px solid var(--global-divider-color);
         border-bottom: 0;
+      }
+
+      .project-card-copy {
+        flex: 0 0 58.3333%;
+        max-width: 58.3333%;
       }
 
       img {
