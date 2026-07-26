@@ -333,6 +333,26 @@ ul.timeline li::before {
   line-height: 1.42;
 }
 
+.cv-conference-list {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.7rem;
+  padding-top: 0.65rem;
+  border-top: 1px dashed var(--global-divider-color);
+}
+
+.cv-conference-detail {
+  margin: 0.14rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.cv-conference-detail span {
+  display: block;
+  margin-top: 0.08rem;
+}
+
 .cv-project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -388,14 +408,7 @@ ul.timeline li::before {
   line-height: 1.34;
 }
 
-.cv-bottom-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(12rem, 1fr);
-  gap: 1.4rem;
-}
-
-.cv-skill-list,
-.cv-language-list {
+.cv-skill-list {
   display: grid;
   gap: 0.28rem;
   margin: 0;
@@ -403,20 +416,17 @@ ul.timeline li::before {
   line-height: 1.35;
 }
 
-.cv-skill-list div,
-.cv-language-list div {
+.cv-skill-list div {
   display: grid;
   grid-template-columns: 5rem minmax(0, 1fr);
   gap: 0.5rem;
 }
 
-.cv-skill-list dt,
-.cv-language-list dt {
+.cv-skill-list dt {
   font-weight: 700;
 }
 
-.cv-skill-list dd,
-.cv-language-list dd {
+.cv-skill-list dd {
   margin: 0;
 }
 
@@ -433,8 +443,7 @@ ul.timeline li::before {
 
   .cv-resume-header,
   .cv-project-grid,
-  .cv-award-list,
-  .cv-bottom-grid {
+  .cv-award-list {
     grid-template-columns: 1fr;
   }
 
@@ -475,7 +484,7 @@ ul.timeline li::before {
     min-width: 0 !important;
     color: #111 !important;
     background: #fff !important;
-    font-size: 9pt;
+    font-size: 10pt;
   }
 
   body {
@@ -537,7 +546,11 @@ ul.timeline li::before {
 
   .cv-section {
     break-inside: avoid;
-    margin-top: 3.2mm;
+    margin-top: 4mm;
+  }
+
+  .cv-publications {
+    break-before: page;
   }
 
   .cv-project,

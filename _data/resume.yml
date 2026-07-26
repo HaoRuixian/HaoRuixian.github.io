@@ -10,9 +10,8 @@ basics:
     countryCode: China
   profiles:
     - network: GitHub
+      display: github.com/HaoRuixian
       url: https://github.com/HaoRuixian
-    - network: ResearchGate
-      url: https://www.researchgate.net/profile/Ruixian-Hao/
   summary: >
     Master's student working on GNSS meteorology, tropospheric parameter modeling,
     atmospheric water vapor, and GNSS reflectometry for water-level and sea-surface-height retrieval.
@@ -42,6 +41,23 @@ work:
     highlights:
       - Investigated ionospheric-scintillation effects on ADS-B civil-aviation trajectories using dual-frequency GNSS carrier-phase combinations.
       - Removed satellite-clock, tropospheric, and relativistic effects to estimate residual-based scintillation indicators.
+
+conferences:
+  - event: 2025 Comprehensive Academic Annual Meeting on Geodesy and Navigation & Seminar on Geodetic Development
+    displayDate: May 2025
+    location: Qingdao, China
+    format: Oral presentation
+    title: Sea Surface Height Estimation Based on Multi-Frequency, Multi-GNSS, and Multi-Method GNSS Multipath Reflectometry
+
+  - event: 2025 Comprehensive Academic Annual Meeting on Geodesy and Navigation
+    displayDate: May 2025
+    location: Qingdao, China
+    format: Flash presentation
+    title: Efficient and Accurate Calculation and Comprehensive Analysis of GNSS Tropospheric Scale Heights
+
+  - event: Satellite Navigation Conference
+    displayDate: 2025
+    format: Poster presentation (Outstanding Poster)
 
 projects:
   - name: ERA5-SH Global Scale-Height Dataset
@@ -146,9 +162,3 @@ skills:
       - C
       - RTKLIB
       - RINEX processing
-
-languages:
-  - language: Chinese
-    fluency: Native
-  - language: English
-    fluency: Academic reading and writing

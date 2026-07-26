@@ -28,7 +28,7 @@ layout: default
         {% endif %}
         {% for profile in resume.basics.profiles %}
           <li>
-            <a href="{{ profile.url }}">{{ profile.network }}</a>
+            <a href="{{ profile.url }}">{{ profile.display | default: profile.network }}</a>
           </li>
         {% endfor %}
         {% if resume.basics.location %}
@@ -98,6 +98,26 @@ layout: default
             </div>
           {% endfor %}
         </div>
+
+        {% if resume.conferences.size > 0 %}
+          <div class="cv-conference-list">
+            {% for entry in resume.conferences %}
+              <div class="cv-entry cv-conference-entry">
+                <div class="cv-entry-date">{{ entry.displayDate }}</div>
+                <div class="cv-entry-body">
+                  <h3>{{ entry.event }}</h3>
+                  <p class="cv-conference-detail">
+                    <strong>{{ entry.format }}</strong>
+                    {% if entry.title %} - {{ entry.title }}{% endif %}
+                    {% if entry.location -%}
+                      <span>{{ entry.location }}</span>
+                    {%- endif %}
+                  </p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
       </section>
     {% endif %}
 
@@ -138,8 +158,8 @@ layout: default
           <span data-lang-zh>代表性论文</span>
         </h2>
         <p class="cv-section-note">
-          <span data-lang-en>APA style; selected first- and second-author publications. Ruixian Hao is shown in bold.</span>
-          <span data-lang-zh>APA 格式；仅列第一、第二作者论文，郝睿贤以粗体标出。</span>
+          <span data-lang-en>Only first- and second-author publications are listed; for second-author papers, the advisor is the first author.</span>
+          <span data-lang-zh>仅列第一、第二作者论文；第二作者论文中导师为第一作者。</span>
         </p>
         <ol class="cv-publication-list">
           {% for entry in resume.publications %}
@@ -172,40 +192,21 @@ layout: default
       </section>
     {% endif %}
 
-    <div class="cv-bottom-grid">
-      {% if resume.skills.size > 0 %}
-        <section class="cv-section" aria-labelledby="cv-skills">
-          <h2 id="cv-skills">
-            <span data-lang-en>Research and Technical Skills</span>
-            <span data-lang-zh>研究与技术技能</span>
-          </h2>
-          <dl class="cv-skill-list">
-            {% for entry in resume.skills %}
-              <div>
-                <dt>{{ entry.name }}</dt>
-                <dd>{{ entry.keywords | join: ', ' }}</dd>
-              </div>
-            {% endfor %}
-          </dl>
-        </section>
-      {% endif %}
-
-      {% if resume.languages.size > 0 %}
-        <section class="cv-section" aria-labelledby="cv-languages">
-          <h2 id="cv-languages">
-            <span data-lang-en>Languages</span>
-            <span data-lang-zh>语言能力</span>
-          </h2>
-          <dl class="cv-language-list">
-            {% for entry in resume.languages %}
-              <div>
-                <dt>{{ entry.language }}</dt>
-                <dd>{{ entry.fluency }}</dd>
-              </div>
-            {% endfor %}
-          </dl>
-        </section>
-      {% endif %}
-    </div>
+    {% if resume.skills.size > 0 %}
+      <section class="cv-section" aria-labelledby="cv-skills">
+        <h2 id="cv-skills">
+          <span data-lang-en>Research and Technical Skills</span>
+          <span data-lang-zh>研究与技术技能</span>
+        </h2>
+        <dl class="cv-skill-list">
+          {% for entry in resume.skills %}
+            <div>
+              <dt>{{ entry.name }}</dt>
+              <dd>{{ entry.keywords | join: ', ' }}</dd>
+            </div>
+          {% endfor %}
+        </dl>
+      </section>
+    {% endif %}
   </article>
 </div>
