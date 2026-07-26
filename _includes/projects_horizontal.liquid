@@ -1,13 +1,22 @@
-<div class="col mb-4">
+{% assign media_col_class = 'col-md-6' %}
+{% assign body_col_class = 'col-md-6' %}
+{% assign image_sizes = '(min-width: 768px) 156px, 50vw' %}
+{% if include.wide %}
+  {% assign media_col_class = 'col-lg-7' %}
+  {% assign body_col_class = 'col-lg-5' %}
+  {% assign image_sizes = '(min-width: 992px) 620px, 95vw' %}
+{% endif %}
+
+<div class="col mb-3">
   <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
     <div class="card h-100 hoverable">
-      <div class="row no-gutters">
+      <div class="row no-gutters project-card-row{% if include.wide %} project-card-row-wide{% endif %}">
         {% if project.img %}
-          <div class="col-md-6">
-            {% include figure.liquid loading="eager" path=project.img sizes="(min-width: 768px) 156px, 50vw" alt="project thumbnail" class="card-img" %}
+          <div class="{{ media_col_class }} project-card-media">
+            {% include figure.liquid loading="eager" path=project.img sizes=image_sizes alt="project thumbnail" class="project-card-img" %}
           </div>
         {% endif %}
-        <div class="{% if project.img %}col-md-6{% else %}col-md-12{% endif %}">
+        <div class="{% if project.img %}{{ body_col_class }}{% else %}col-md-12{% endif %} project-card-copy">
           <div class="card-body">
             <h3 class="card-title">{{ project.title }}</h3>
             <p class="card-text">

@@ -16,7 +16,7 @@ These repositories collect the main open-source outputs behind the dataset, GNSS
 
 <div data-lang-zh markdown="1">
 
-这里汇总与数据集、GNSS 反射测量和实用 GNSS 数据处理相关的主要开源仓库，重点包括 ERA5-SH、GMR-Water、RTGS 和 my_RTKLIB。
+这里汇总与数据集、GNSS 反射测量和实用 GNSS 数据处理相关的主要开源仓库，重点包括 ERA5-SH、GMR-Water 和 RTGS。
 
 </div>
 

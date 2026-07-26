@@ -36,9 +36,9 @@ This page highlights research datasets, GNSS reflectometry software, and practic
   <!-- Generate cards for each project -->
   {% if page.horizontal %}
   <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
+    <div class="row row-cols-1">
     {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
+      {% include projects_horizontal.liquid wide=true %}
     {% endfor %}
     </div>
   </div>
@@ -62,9 +62,9 @@ This page highlights research datasets, GNSS reflectometry software, and practic
 {% if page.horizontal %}
 
   <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
+    <div class="row row-cols-1">
     {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
+      {% include projects_horizontal.liquid wide=true %}
     {% endfor %}
     </div>
   </div>

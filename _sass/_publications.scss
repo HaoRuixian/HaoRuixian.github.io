@@ -5,7 +5,7 @@
 @use "variables" as v;
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 1.25rem;
 
   h1 {
     color: var(--global-theme-color);
@@ -16,7 +16,7 @@
   }
 
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 
     span {
       font-size: 1.5rem;
@@ -26,8 +26,8 @@
   h2.bibliography {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
+    padding-top: 0.75rem;
+    margin-top: 1.5rem;
     text-align: right;
   }
 
@@ -37,24 +37,27 @@
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
 
       .preview {
         display: inline-block;
         width: 100%;
         aspect-ratio: 16 / 9;
-        object-fit: contain;
-        background-color: #fff;
+        object-fit: cover;
+        background-color: var(--global-image-bg-color);
         border: 1px solid var(--global-divider-color);
+        transition:
+          filter 0.2s ease,
+          background-color 0.2s ease;
       }
 
       .abbr {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.25rem;
 
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.25rem;
           color: var(--global-card-bg-color) !important;
 
           a {
@@ -107,11 +110,10 @@
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
+          padding: 0.18rem 0.65rem;
           margin-left: 0;
+          margin-top: 0.2rem;
+          font-size: 0.8rem;
 
           &:hover {
             color: var(--global-theme-color);
