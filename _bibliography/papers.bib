@@ -13,6 +13,7 @@
   doi       = {10.1007/s10291-026-02111-y},
   url       = {https://doi.org/10.1007/s10291-026-02111-y},
   code      = {https://github.com/HaoRuixian/GNSS-IR-Kit},
+  pdf       = {yang2026-gmr-water.pdf},
   preview   = {gmr-water.png},
   selected  = {true}
 }
@@ -41,6 +42,7 @@
   doi       = {10.1109/JSTARS.2026.3691785},
   url       = {https://doi.org/10.1109/JSTARS.2026.3691785},
   code      = {https://github.com/HaoRuixian/GNSS-IR-Kit},
+  pdf       = {yang2026-gnss-ir-sea-surface-height.pdf},
   preview   = {gnss-ir-sea-surface.png}
 }
 
@@ -56,6 +58,7 @@
   abstract  = {Tropospheric delay is a major source of error affecting the accuracy of satellite earth observation, including global navigation satellite system (GNSS). The accurate zenith tropospheric delay (ZTD) prediction is significant for positioning and navigation. This study proposed a method for predicting ZTD using meteorological ensemble forecast data and analyzed the performances of the ensemble forecast data from different NWP systems. The ZTD observations from IGS stations were used as references, and the ensemble forecast data from two high-resolution NWP systems, ECMWF-IFS and NCEP-GFS, were selected to conduct experiments to analyze their specific performance in ZTD prediction.},
   doi       = {10.1016/j.asr.2025.12.040},
   url       = {https://doi.org/10.1016/j.asr.2025.12.040},
+  pdf       = {xu2026-ensemble-ztd.pdf},
   preview   = {ensemble-ztd.png}
 }
 
@@ -70,23 +73,26 @@
   abstract  = {Precipitable water vapor (PWV) reflects the vertically integrated amount of water vapor in the atmosphere, but it only represents the two-dimensional distribution of water vapor. With the development of GNSS satellite constellation and station network, GNSS water vapor tomography has emerged as a prominent technique for obtaining the three-dimensional water vapor distribution and become a hotspot in GNSS meteorology. We propose an optimal method for GNSS water vapor tomography based on parameter adaptation to solve the ill-posed problem caused by the discretization parameter redundancy in the tomographic model. This method introduces the minimum probability factor of voxels being penetrated by signals, determines the number and position of the redundant parameters in the observation equation by iterating the coefficient matrix, establishes the optimal tomographic model by eliminating the zero elements of the coefficient matrix and the redundant parameters, and calculates the water vapor density of all voxels by constructing a Laplace smoothing equation. The tomography experiments conducted in Hong Kong show that the average root mean square error (RMSE) and mean absolute error (MAE) for the proposed and traditional method are 1.25/0.70 and 1.83/0.92 mm in the internal accurate testing, respectively, compared to the GAMIT-estimated slant water vapor (SWV) as a reference. The average RMSE and normalized RMSE are 10.9 mm and 8.2% for the proposed method, while these values are 13.2 mm and 10% for the traditional method. Using the radiosonde data as references, the proposed method improves average RMSE and MAE by 20.4% and 25.3% compared with the traditional method.},
   doi       = {10.1007/s10291-025-02006-4},
   url       = {https://doi.org/10.1007/s10291-025-02006-4},
+  pdf       = {yang2025-gnss-parameter-adaptation.pdf},
   preview   = {parameter-tomography.png},
   selected  = {true}
 }
 
-@article{yang2025bds-sea-surface-height,
-  title     = {The reflectometry method and accuracy analysis of the sea surface height based multi-observation from {BDS}},
-  author    = {Yang, Fei and Chen, Weicong and Hao, Ruixian and Li, Zhicai and Chen, Yao and Wang, Zhe},
-  journal   = {Satellite Navigation},
-  volume    = {6},
+@article{hao2025bds-sea-surface-height,
+  title     = {地基北斗多信息海面高反射测量方法及精度分析},
+  author    = {Hao, Ruixian and Yang, Fei and Chen, Weicong and Li, Zhicai and Wang, Lei and Yang, Rui and Zhang, Yajun},
+  journal   = {全球定位系统},
+  volume    = {50},
   number    = {2},
-  pages     = {1--7},
+  pages     = {46--53},
   year      = {2025},
-  abstract  = {With the continuous development of the BeiDou Navigation Satellite System (BDS), sea surface height retrieval based on BDS Interferometric Reflectometry (BDS-IR) has attracted increasing attention. In this paper, we introduce sea surface height retrieval methods based on BDS SNR, triple-frequency carrier phase combinations, and single-frequency carrier pseudorange combinations, and also analyse the effects of signal types and signal frequencies on BDS-IR sea surface height retrieval. Using 120 days of BDS observation data from the AT01 station, the retrieval results show that the RMSE of the SNR-based retrieval model, triple-frequency carrier phase combination model, and single-frequency carrier pseudo range combination model are 0.199 m, 0.189 m, and 0.204 m, respectively, with bias of 0.126 m, 0.067 m, and 0.130 m, respectively. The SNR-based model performs the best, and the triple-frequency carrier phase combination model outperforms the single-frequency carrier pseudo range model. All BDS frequencies demonstrate high retrieval accuracy, with the RMSE ranging between 0.16 m and 0.19 m. Excluding the S7I, which provides an average of only 5.5 retrieval points per day, the other frequencies produce about 50 retrieval points per day, meeting the requirements for high-precision sea level monitoring. BDS-2 and BDS-3 exhibit comparable retrieval accuracy, with RMSE of 0.163 m and 0.185 m, respectively. This study will further improve GNSS-IR water level monitoring technology and provide accuracy support for future research.},
+  abstract  = {随着北斗卫星导航系统（BDS）的不断发展，基于 BDS 干涉反射测量（BDS-IR）的海面高反演受到了越来越多的关注。本文介绍了基于 BDS 信噪比（SNR）信号、载波相位三频组合以及载波伪距单频组合的海面高反演方法，并分析了信号种类、信号频点对 BDS-IR 海面高反演的影响。基于 AT01 测站的 120 d BDS 观测数据反演结果表明，SNR 反演模型、载波相位三频组合反演模型与载波伪距单频组合反演模型的均方根误差分别为 0.199 m、0.189 m 和 0.204 m，偏差分别为 0.126 m、0.067 m 与 0.130 m。},
   doi       = {10.12265/j.gnss.2024208},
   url       = {https://doi.org/10.12265/j.gnss.2024208},
   code      = {https://github.com/HaoRuixian/GNSS-IR-Kit},
-  preview   = {bds-reflectometry.png}
+  pdf       = {hao2025-bds-sea-surface-reflectometry.pdf},
+  preview   = {bds-reflectometry.png},
+  selected  = {true}
 }
 
 @article{hao2025era5-sh,
@@ -101,6 +107,7 @@
   doi       = {10.1038/s41597-025-04714-5},
   url       = {https://doi.org/10.1038/s41597-025-04714-5},
   code      = {https://github.com/HaoRuixian/ERA5-SH-dataset-for-troposphere-parameters-code-for-estimate-and-analysis},
+  pdf       = {hao2025-era5-sh.pdf},
   preview   = {era5-sh.png},
   selected  = {true}
 }
@@ -117,6 +124,7 @@
   abstract  = {The delay of the neutral atmosphere to the Global Navigation Satellite System (GNSS) signal, often expressed as the zenith tropospheric delay (ZTD), is critical to the accuracy and convergence time of GNSS positioning and is the basis for precipitable water inversion in GNSS meteorology. The study explored the performance of products with different spatial resolutions in estimating ZTD. In order to evaluate the accuracy of the ZTD values of the TUW-VMF3 and GFZ-VMF3 products in China region, this paper selects the hourly ZTD values as the estimated ZTD values and makes a comprehensive comparison with the ZTD values of 238 GNSS stations in the existing ZTD data of CMONOC for the period of 2012-2020 as a reference. In this process, particular attention is given to products with varying spatial resolutions to ensure the comprehensiveness and accuracy of the assessment results. The TUW-VMF3 outperformed the GFZ-VMF3 at 89.1% of the stations, but noted that the RMSE difference between the two was very small.},
   doi       = {10.1016/j.asr.2024.12.070},
   url       = {https://doi.org/10.1016/j.asr.2024.12.070},
+  pdf       = {wen2025-cmonoc-tropospheric-delay.pdf},
   preview   = {cmonoc-ztd.png}
 }
 
@@ -131,6 +139,7 @@
   abstract  = {Zenith tropospheric delay (ZTD) is an important atmospheric parameter in radio-space-geodetic techniques such as Global Navigation Satellite System (GNSS), which is pivotal for GNSS positioning, navigation and meteorology. The Vienna Mapping Function (VMF) data server is a widely utilized source for implementing ZTD, offering two types of models, that is, the empirical one and the discrete one with Grid-wise and Site-wise models. Therefore, to evaluate the accuracy of these models becomes the focus of this article. Specifically, this study investigates their performances in terms of calculation of ZTD, using the hourly values derived from the International GNSS Service data as references. The results show that the root mean square err (RMSE) of the Site-wise, Grid-wise and global pressure and temperature 3 model are 11.71/13.03/38.56 mm, respectively, indicating the discrete model performs generally better than the empirical model, and the Site-wise model is the better of the two discrete models. From the perspective of spatial resolution, the performance of these three models in ZTD calculation shows obvious influences of latitude changes and elevation differences. From the temporal analysis, the accuracy of the discrete model shows differences over different UTC epochs, while the empirical model can only express the seasonal ZTD characteristics with the average RMSE at different epochs being similar, the specifically values are 39.67, 39.26, 39.38 and 39.18 mm at UTC 0:00, 6:00, 12:00 and 18:00, respectively. The histogram and boxplot well indicate the accuracy differences of the three models in different seasons. Additionally, the time series of three models at different latitudes were also explored in this research. These explorations are conducive to the selection of appropriate models for calculating ZTD based on specific requirements.},
   doi       = {10.1029/2024RS007950},
   url       = {https://doi.org/10.1029/2024RS007950},
+  pdf       = {yao2024-igs-troposphere-delay-models.pdf},
   preview   = {https://www.researchgate.net/publication/381447195/figure/download/fig1/AS:11431281252033660@1718462927785/The-distribution-of-global-navigation-satellite-system-sites-and-their-available-Zenith.png}
 }
 
@@ -146,6 +155,7 @@
   abstract  = {Water vapor scale height reflects the vertical distribution of water vapor in the atmosphere, which is a vital parameter in tropospheric zenith wet delay (ZWD) modeling and GNSS meteorology. This study accurately calculated the long-term water vapor scale height using 89 radiosonde stations in China, analyzed the characteristics in temporal and spatial variations and explored the impact factors of the water vapor scale height from the perspective of the climate zones. The numerical results indicate that the water vapor scale height in China exhibits annual and semiannual variations with a rising-then-decreasing trend across the four seasons. A relatively larger value for the water vapor scale height were observed in the subtropical monsoon climate and the temperate continental climate zone, in which the values are greater than 2.35 km, while the values in temperate monsoon climate and the alpine plateau climate zone are relatively small. In addition, the water vapor scale height in different climate zones shows different trends, with a downward trend appeared in the subtropical monsoon climate and the alpine plateau climate zone, while an upward trend was observed in the temperate monsoon climate and the temperate continental climate zone. Furthermore, a positive correlation between water vapor scale height and temperature, pressure, and atmospheric precipitable water was found in China, with a varied degree of correlation in different climate zones.},
   doi       = {10.1016/j.asr.2024.05.019},
   url       = {https://doi.org/10.1016/j.asr.2024.05.019},
+  pdf       = {hao2024-water-vapor-scale-height.pdf},
   preview   = {water-vapor-scale-height.png},
   selected  = {true}
 }
@@ -161,5 +171,6 @@
   abstract  = {GNSS water vapor tomography has emerged as a prominent technique for obtaining the three-dimensional distribution of atmospheric water vapor. It effectively compensates for the deficiency of GNSS precipitable water vapor that only reflects the two-dimensional distribution of water vapor and has become a hotspot in GNSS meteorology. The GNSS water vapor tomography based on the Kalman filter well considers the correlation between successive epochs and avoids the restrictions of too many additional constraints, but its accuracy and stability are often affected by the noise covariance. We propose an optimized noise covariance matrix method for GNSS water vapor tomography based on the Kalman filter. It constructs the state noise covariance using historical water vapor information derived from atmospheric reanalysis data and establishes the observation noise covariance considering the satellite elevation angle and the signal intercept crossing the tomographic voxels. The tomography experiments conducted in Hong Kong show that the root-mean-square error (RMSE) and mean absolute error (MAE) of the slant water vapor computed by the proposed method decreased by 38.8% and 34.9% compared with the traditional method. The proposed method improves average RMSE and MAE of 23.2% and 24.8% compared to the radiosonde data and 27.6% and 44.3% compared to ERA5 data.},
   doi       = {10.1007/s10291-023-01517-2},
   url       = {https://doi.org/10.1007/s10291-023-01517-2},
+  pdf       = {yang2023-kalman-filter-tomography.pdf},
   preview   = {kalman-tomography.png}
 }
