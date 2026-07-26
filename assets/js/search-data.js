@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Academic CV covering education, research projects, publications, awards, and technical skills.",
+          description: "Two-page academic CV highlighting education, research experience, selected publications, honors, and technical skills.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
