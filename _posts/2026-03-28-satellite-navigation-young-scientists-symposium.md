@@ -4,8 +4,8 @@ title: Receiving the Outstanding Poster Award at Satellite Navigation 2026
 title_zh: 在 Satellite Navigation 2026 青年科学家研讨会上荣获杰出海报奖
 date: 2026-03-28
 description: Reflections on presenting our near-real-time GNSS-IR sea-level retrieval research and receiving the Outstanding Poster Award at the Satellite Navigation 2026 Young Scientists Symposium.
-tags: [conference, low-cost GNSS sea-level retrieval, outstanding poster]
-categories: conference
+tags: [GNSS-IR, sea-level monitoring, low-cost GNSS, academic presentation]
+categories: academic-events
 thumbnail: /assets/img/blog/0328-satellite-navigation-poster.jpeg
 related_posts: false
 _styles: |
@@ -63,12 +63,12 @@ The symposium once again demonstrated the importance of academic exchange among 
 
 ![Ruixian Hao standing beside the poster presented at the Satellite Navigation 2026 Young Scientists Symposium.](/assets/img/blog/0328-satellite-navigation-poster.jpeg)
 
-<span data-lang-en>*Presenting the research poster at the symposium.*</span><span data-lang-zh>*与本次研讨会展示的学术海报合影。*</span>
+<span data-lang-en>_Presenting the research poster at the symposium._</span><span data-lang-zh>_与本次研讨会展示的学术海报合影。_</span>
 
 ![Outstanding Poster Award presentation at the Satellite Navigation 2026 Young Scientists Symposium.](/assets/img/blog/0328-outstanding-poster-award.jpeg)
 
-<span data-lang-en>*Receiving the Outstanding Poster Award during the symposium.*</span><span data-lang-zh>*与施院士合影，记录杰出海报颁奖时刻。*</span>
+<span data-lang-en>_Receiving the Outstanding Poster Award during the symposium._</span><span data-lang-zh>_与施院士合影，记录杰出海报颁奖时刻。_</span>
 
 ![Certificate for the Outstanding Poster Award.](/assets/img/blog/0328-outstanding-poster-certificate.jpeg)
 
-<span data-lang-en>*The Outstanding Poster certificate.*</span><span data-lang-zh>*杰出海报奖证书。*</span>
+<span data-lang-en>_The Outstanding Poster certificate._</span><span data-lang-zh>_杰出海报奖证书。_</span>

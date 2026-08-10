@@ -4,8 +4,8 @@ title: First Prize for Our Low-Cost GNSS-IR Tide Gauge
 title_zh: 低成本 GNSS-IR 水位计项目荣获创新场景挑战赛未来信息赛道一等奖
 date: 2025-12-26
 description: Our low-cost GNSS-IR tide gauge ranked first in the Future Information Track of the 2025 Beijing University Innovation Scenario Challenge.
-tags: [innovation competition, low-cost GNSS-IR tide gauge, first prize]
-categories: competition
+tags: [GNSS-IR, sea-level monitoring, low-cost GNSS, innovation competition]
+categories: awards
 thumbnail: /assets/img/blog/1226-innovation-final-defense.jpeg
 related_posts: false
 _styles: |
@@ -75,12 +75,12 @@ Moving from research papers to a prototype system and then to an innovation proj
 
 ![Ruixian Hao presenting the low-cost GNSS-IR system during the final defense.](/assets/img/blog/1226-innovation-final-defense.jpeg)
 
-<span data-lang-en>*Presenting the project during the final defense at Beijing University of Technology.*</span><span data-lang-zh>*在北京工业大学进行决赛现场答辩。*</span>
+<span data-lang-en>_Presenting the project during the final defense at Beijing University of Technology._</span><span data-lang-zh>_在北京工业大学进行决赛现场答辩。_</span>
 
 ![Ruixian Hao speaking at the award ceremony after ranking first in the Future Information Track.](/assets/img/blog/1226-innovation-award-speech.jpeg)
 
-<span data-lang-en>*Speaking at the award ceremony in Beijing E-Town.*</span><span data-lang-zh>*在北京亦庄举行的颁奖典礼上作为第一名发言。*</span>
+<span data-lang-en>_Speaking at the award ceremony in Beijing E-Town._</span><span data-lang-zh>_在北京亦庄举行的颁奖典礼上作为第一名发言。_</span>
 
 ![First Prize certificate from the Beijing University Innovation Scenario Challenge.](/assets/img/blog/1226-innovation-first-prize-certificate.jpeg)
 
-<span data-lang-en>*The First Prize certificate for the Future Information Track.*</span><span data-lang-zh>*未来信息赛道一等奖（第一名）获奖证书。*</span>
+<span data-lang-en>_The First Prize certificate for the Future Information Track._</span><span data-lang-zh>_未来信息赛道一等奖（第一名）获奖证书。_</span>

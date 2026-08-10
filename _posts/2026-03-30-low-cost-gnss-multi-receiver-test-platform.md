@@ -4,8 +4,8 @@ title: Building a Multi-Receiver Test Platform for Low-Cost GNSS Modules
 title_zh: 在北航柏彦大厦开展低成本 GNSS 设备测试实验
 date: 2026-03-30
 description: Designing and deploying a synchronized multi-receiver platform for evaluating low-cost GNSS modules under identical observation conditions.
-tags: [low-cost GNSS, experimental evaluation, receiver comparison]
-categories: projects
+tags: [low-cost GNSS, research infrastructure, receiver evaluation]
+categories: research-projects
 thumbnail: /assets/img/blog/0330-final-multi-receiver-platform.jpeg
 related_posts: false
 _styles: |
@@ -87,12 +87,12 @@ In the future, I plan to use this platform for systematic comparisons of low-cos
 
 ![The first low-cost GNSS receiver prototype assembled in a cardboard enclosure.](/assets/img/blog/0330-prototype-platform.png)
 
-<span data-lang-en>*The early prototype of the multi-receiver platform.*</span><span data-lang-zh>*最初使用自制纸箱搭建的设备原型。*</span>
+<span data-lang-en>_The early prototype of the multi-receiver platform._</span><span data-lang-zh>_最初使用自制纸箱搭建的设备原型。_</span>
 
 ![The final multi-receiver GNSS test platform deployed with the antenna splitter and receiver modules.](/assets/img/blog/0330-final-multi-receiver-platform.jpeg)
 
-<span data-lang-en>*The final deployed low-cost GNSS test platform.*</span><span data-lang-zh>*最终部署完成的低成本 GNSS 多模组测试平台。*</span>
+<span data-lang-en>_The final deployed low-cost GNSS test platform._</span><span data-lang-zh>_最终部署完成的低成本 GNSS 多模组测试平台。_</span>
 
 ![The web management system showing the status and data streams of the GNSS receivers.](/assets/img/blog/0330-web-management-system.png)
 
-<span data-lang-en>*The web-based monitoring and control interface.*</span><span data-lang-zh>*GNSS 设备 Web 远程管理与监控界面。*</span>
+<span data-lang-en>_The web-based monitoring and control interface._</span><span data-lang-zh>_GNSS 设备 Web 远程管理与监控界面。_</span>

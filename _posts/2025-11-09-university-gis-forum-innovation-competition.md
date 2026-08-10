@@ -4,8 +4,8 @@ title: Presenting Our Low-Cost GNSS-IR Tide Gauge at the University GIS Forum
 title_zh: 参加高校 GIS 论坛创新创业竞赛：低成本 GNSS-IR 水位计项目荣获二等奖
 date: 2025-11-09
 description: Reflections on presenting a low-cost GNSS-IR tide gauge as an innovation project and receiving Second Prize at the 13th University GIS Forum.
-tags: [innovation competition, low-cost GNSS-IR tide gauge, University GIS Forum]
-categories: competition
+tags: [GNSS-IR, sea-level monitoring, low-cost GNSS, innovation competition]
+categories: awards
 thumbnail: /assets/img/blog/1109-gis-forum-presentation.jpeg
 related_posts: false
 _styles: |
@@ -75,8 +75,8 @@ Participating in the University GIS Forum gave me more than a competition result
 
 ![Ruixian Hao presenting the low-cost GNSS-IR tide gauge during the final defense.](/assets/img/blog/1109-gis-forum-presentation.jpeg)
 
-<span data-lang-en>*Presenting the project during the on-site final defense.*</span><span data-lang-zh>*在决赛现场介绍低成本 GNSS-IR 水位计项目。*</span>
+<span data-lang-en>_Presenting the project during the on-site final defense._</span><span data-lang-zh>_在决赛现场介绍低成本 GNSS-IR 水位计项目。_</span>
 
 ![Second Prize certificate from the University GIS Forum Innovation and Entrepreneurship Competition.](/assets/img/blog/1109-gis-forum-second-prize.jpeg)
 
-<span data-lang-en>*The project received Second Prize in the competition.*</span><span data-lang-zh>*项目获得创新创业竞赛二等奖。*</span>
+<span data-lang-en>_The project received Second Prize in the competition._</span><span data-lang-zh>_项目获得创新创业竞赛二等奖。_</span>

@@ -4,8 +4,8 @@ title: Deploying a New GNSS-IR Experimental Platform at the Ningbo Hydrological 
 title_zh: 在宁波水文站部署新一代 GNSS-IR 实验平台
 date: 2026-06-17
 description: A field report on upgrading a GNSS-IR water-level monitoring platform with directional antennas, dual-polarization observations, and real-time edge computing.
-tags: [GNSS-IR sea level retrieval, field experiment, Ningbo hydrological station]
-categories: field-experiment
+tags: [GNSS-IR, sea-level monitoring, low-cost GNSS, field deployment]
+categories: research-projects
 thumbnail: /assets/img/blog/0617-final-gnss-ir-deployment.png
 related_posts: false
 _styles: |
@@ -79,12 +79,12 @@ GNSS-IR 是一种非接触式遥感观测技术，可以利用卫星直射信号
 
 ![Sediment accumulation inside the stilling well, which obstructs the conventional float gauge.](/assets/img/blog/0617-stilling-well-sediment.png)
 
-<span data-lang-en>*Sediment accumulation inside the stilling well and the affected float gauge.*</span><span data-lang-zh>*水位井内的淤泥沉积，以及受到影响的浮子式水位计。*</span>
+<span data-lang-en>_Sediment accumulation inside the stilling well and the affected float gauge._</span><span data-lang-zh>_水位井内的淤泥沉积，以及受到影响的浮子式水位计。_</span>
 
 ![The GNSS data-acquisition equipment, including the Raspberry Pi, UM982 receiver, and communication hardware.](/assets/img/blog/0617-gnss-data-platform.png)
 
-<span data-lang-en>*The field GNSS data-acquisition platform.*</span><span data-lang-zh>*本次实验使用的 GNSS 数据采集设备。*</span>
+<span data-lang-en>_The field GNSS data-acquisition platform._</span><span data-lang-zh>_本次实验使用的 GNSS 数据采集设备。_</span>
 
 ![The final GNSS-IR deployment with the upward-looking RHCP antenna and downward-looking LHCP antenna.](/assets/img/blog/0617-final-gnss-ir-deployment.png)
 
-<span data-lang-en>*The final deployment at the hydrological station.*</span><span data-lang-zh>*最终部署完成的 GNSS-IR 观测平台。*</span>
+<span data-lang-en>_The final deployment at the hydrological station._</span><span data-lang-zh>_最终部署完成的 GNSS-IR 观测平台。_</span>

@@ -4,8 +4,8 @@ title: Deploying a Multi-Sensor GNSS Observation Station
 title_zh: 我在综合楼楼顶部署了一套 GNSS 综合观测基站
 date: 2026-07-14
 description: A field report on designing, installing, and commissioning a rooftop GNSS and environmental monitoring platform.
-tags: [GNSS, GNSS meteorology, multi-sensor integration]
-categories: projects
+tags: [GNSS meteorology, research infrastructure, multi-sensor systems, field deployment]
+categories: research-projects
 thumbnail: /assets/img/blog/03-final-rooftop-station.png
 related_posts: false
 _styles: |
@@ -75,16 +75,16 @@ GNSS 部分采用了独立的数据采集架构。天线信号通过 90 m 低损
 
 ![The equipment being debugged at my workstation.](/assets/img/blog/01-desk-debugging.jpeg)
 
-<span data-lang-en>*Debugging the equipment at my workstation.*</span><span data-lang-zh>*在工位调试设备。*</span>
+<span data-lang-en>_Debugging the equipment at my workstation._</span><span data-lang-zh>_在工位调试设备。_</span>
 
 ![Fabricating the support bracket in the field.](/assets/img/blog/02-field-assembly.jpeg)
 
-<span data-lang-en>*Fabricating the support bracket in the field.*</span><span data-lang-zh>*外出进行支架的焊接制作。*</span>
+<span data-lang-en>_Fabricating the support bracket in the field._</span><span data-lang-zh>_外出进行支架的焊接制作。_</span>
 
 ![The completed rooftop observation station.](/assets/img/blog/03-final-rooftop-station.png)
 
-<span data-lang-en>*The completed rooftop observation station.*</span><span data-lang-zh>*最终安装完成的楼顶设备。*</span>
+<span data-lang-en>_The completed rooftop observation station._</span><span data-lang-zh>_最终安装完成的楼顶设备。_</span>
 
 ![A view of the installed equipment from the ground.](/assets/img/blog/04-building-view.png)
 
-<span data-lang-en>*The station viewed from the ground.*</span><span data-lang-zh>*从楼下看到的设备，非常骄傲！*</span>
+<span data-lang-en>_The station viewed from the ground._</span><span data-lang-zh>_从楼下看到的设备，非常骄傲！_</span>
