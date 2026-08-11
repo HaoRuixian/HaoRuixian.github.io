@@ -17,6 +17,15 @@ _styles: |
     margin: 1.25rem auto 0.5rem;
     object-fit: contain;
   }
+  .blog-figure {
+    margin: 1.75rem auto 2rem;
+    text-align: center;
+  }
+  .blog-figure figcaption {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
 ---
 
 <div data-lang-en markdown="1">
@@ -28,20 +37,6 @@ I traveled to East China Normal University in Shanghai to participate in the 202
 The project centered on a low-cost GNSS-IR tide gauge. It combines GNSS Interferometric Reflectometry with affordable GNSS receivers and a self-developed data-acquisition system to provide continuous, real-time water-level monitoring. The goal is to complement conventional tide-gauge infrastructure with a solution that is more economical and flexible to deploy, particularly at sites where traditional instruments are difficult or expensive to install.
 
 My research has focused on GNSS-IR sea-level and water-level retrieval for several years. Preparing for this competition encouraged me to examine the same work from a different perspective. In addition to algorithm accuracy and scientific novelty, I needed to consider system reliability, product positioning, user needs, deployment costs, application scenarios, and the pathway from a laboratory prototype to an operational monitoring product.
-
-## Preparing for the on-site defense
-
-After the preliminary evaluation, the project advanced to the final round, and I was invited to give an on-site presentation and defense. Unlike a conventional academic conference, the competition placed greater emphasis on technological innovation, practical value, market demand, and commercialization potential. My presentation therefore needed to explain not only how GNSS-IR works, but also why the system is useful, who might use it, and how it could be developed further.
-
-This preparation helped me understand that successful technology transfer requires more than a technically sound algorithm. A research outcome must also address a clear problem, fit the operational environment, and offer a realistic advantage over existing solutions. Thinking through these questions gave me a more complete view of the low-cost GNSS-IR system and highlighted several areas for future improvement.
-
-## Receiving Second Prize
-
-The project ultimately received Second Prize. Although there is still room to improve the system and its presentation, recognition from the judges was encouraging. More importantly, the experience strengthened my ability to explain a technical project to a broader audience and improved my understanding of business models, user requirements, product development, and research commercialization.
-
-During the trip, I also met my high school classmate Wang Jingyang, who is studying computer science at Fudan University. We discussed artificial intelligence, computer technology, research, and our experiences over the past several years. That conversation added an enjoyable personal dimension to the visit and reinforced the value of exchanging ideas across disciplines.
-
-Participating in the University GIS Forum gave me more than a competition result. It helped me see the close relationship between research innovation and practical deployment, and reminded me that interdisciplinary collaboration can play an important role in moving technology forward. I hope to continue improving the low-cost GNSS-IR tide-gauge system and bring it closer to real applications in water-level and environmental monitoring.
 
 </div>
 
@@ -55,11 +50,46 @@ Participating in the University GIS Forum gave me more than a competition result
 
 近年来，我一直围绕 GNSS-IR 海（水）面高反演开展研究。准备这次比赛的过程，让我有机会从不同于学术论文的角度重新审视自己的工作。除了算法精度和学术创新，我还需要考虑系统可靠性、产品定位、用户需求、部署成本、应用场景，以及如何将实验室原型进一步发展为可以实际运行的监测产品。
 
+</div>
+
+<div data-lang-en markdown="1">
+
+## Preparing for the on-site defense
+
+After the preliminary evaluation, the project advanced to the final round, and I was invited to give an on-site presentation and defense. Unlike a conventional academic conference, the competition placed greater emphasis on technological innovation, practical value, market demand, and commercialization potential. My presentation therefore needed to explain not only how GNSS-IR works, but also why the system is useful, who might use it, and how it could be developed further.
+
+This preparation helped me understand that successful technology transfer requires more than a technically sound algorithm. A research outcome must also address a clear problem, fit the operational environment, and offer a realistic advantage over existing solutions. Thinking through these questions gave me a more complete view of the low-cost GNSS-IR system and highlighted several areas for future improvement.
+
+</div>
+
+<div data-lang-zh markdown="1">
+
 ## 准备现场路演答辩
 
 经过前期项目评审，我顺利进入决赛，并受邀前往现场参加路演答辩。与传统学术会议不同，创新创业竞赛更加关注项目的技术创新性、实际应用价值、市场需求以及未来发展潜力。因此，我不仅需要介绍 GNSS-IR 的技术原理，还需要系统说明项目能够解决什么问题、面向哪些用户，以及未来如何继续完善和推广。
 
 这一准备过程让我更加深刻地认识到，科研成果要实现技术转化，仅有性能良好的算法还不够。一个真正能够落地的系统，还需要面对明确的实际问题，适应具体运行环境，并相较现有方案体现出可操作的优势。围绕这些问题进行思考，让我对低成本 GNSS-IR 水位计有了更加完整的认识，也发现了后续需要继续改进的方向。
+
+</div>
+
+<figure class="blog-figure">
+  <img src="/assets/img/blog/1109-gis-forum-presentation.jpeg" alt="Ruixian Hao presenting the low-cost GNSS-IR tide gauge during the final defense" loading="lazy">
+  <figcaption><span data-lang-en>Presenting the project during the on-site final defense.</span><span data-lang-zh>在决赛现场介绍低成本 GNSS-IR 水位计项目。</span></figcaption>
+</figure>
+
+<div data-lang-en markdown="1">
+
+## Receiving Second Prize
+
+The project ultimately received Second Prize. Although there is still room to improve the system and its presentation, recognition from the judges was encouraging. More importantly, the experience strengthened my ability to explain a technical project to a broader audience and improved my understanding of business models, user requirements, product development, and research commercialization.
+
+During the trip, I also met my high school classmate Wang Jingyang, who is studying computer science at Fudan University. We discussed artificial intelligence, computer technology, research, and our experiences over the past several years. That conversation added an enjoyable personal dimension to the visit and reinforced the value of exchanging ideas across disciplines.
+
+Participating in the University GIS Forum gave me more than a competition result. It helped me see the close relationship between research innovation and practical deployment, and reminded me that interdisciplinary collaboration can play an important role in moving technology forward. I hope to continue improving the low-cost GNSS-IR tide-gauge system and bring it closer to real applications in water-level and environmental monitoring.
+
+</div>
+
+<div data-lang-zh markdown="1">
 
 ## 项目获得二等奖
 
@@ -71,12 +101,7 @@ Participating in the University GIS Forum gave me more than a competition result
 
 </div>
 
-## <span data-lang-en>Competition photos</span><span data-lang-zh>竞赛照片</span>
-
-![Ruixian Hao presenting the low-cost GNSS-IR tide gauge during the final defense.](/assets/img/blog/1109-gis-forum-presentation.jpeg)
-
-<span data-lang-en>_Presenting the project during the on-site final defense._</span><span data-lang-zh>_在决赛现场介绍低成本 GNSS-IR 水位计项目。_</span>
-
-![Second Prize certificate from the University GIS Forum Innovation and Entrepreneurship Competition.](/assets/img/blog/1109-gis-forum-second-prize.jpeg)
-
-<span data-lang-en>_The project received Second Prize in the competition._</span><span data-lang-zh>_项目获得创新创业竞赛二等奖。_</span>
+<figure class="blog-figure">
+  <img src="/assets/img/blog/1109-gis-forum-second-prize.jpeg" alt="Second Prize certificate from the University GIS Forum Innovation and Entrepreneurship Competition" loading="lazy">
+  <figcaption><span data-lang-en>The project received Second Prize in the competition.</span><span data-lang-zh>项目获得创新创业竞赛二等奖。</span></figcaption>
+</figure>

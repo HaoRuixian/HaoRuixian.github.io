@@ -17,6 +17,15 @@ _styles: |
     margin: 1.25rem auto 0.5rem;
     object-fit: contain;
   }
+  .blog-figure {
+    margin: 1.75rem auto 2rem;
+    text-align: center;
+  }
+  .blog-figure figcaption {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
 ---
 
 <div data-lang-en markdown="1">
@@ -30,18 +39,6 @@ My recent research has focused on low-cost GNSS-IR sea-level and water-level mon
 Alongside research papers and algorithm development, I have been exploring how this technology can become a practical engineering product. The competition project was built upon this research foundation and emphasized affordability, reliability, ease of deployment, and long-term operation. The proposed system is intended to provide an economical and efficient option for smart hydrology, coastal and ocean monitoring, and disaster-risk reduction.
 
 The project presentation covered not only the basic principles of GNSS Interferometric Reflectometry, but also the complete system architecture. This included low-cost receiver hardware, antenna configuration, data acquisition, remote communication, edge and cloud processing, system maintenance, and potential deployment scenarios. Presenting the project in this form helped connect the scientific method with the practical requirements of a deployable monitoring system.
-
-## Final presentation and expert feedback
-
-Following the preliminary evaluation, the project advanced to the final round. The final competition was held on December 3, 2025, at Beijing University of Technology, where I delivered an on-site presentation and answered questions from the judging panel. The event brought together outstanding innovation teams from different universities and disciplines, creating an opportunity to compare solutions and learn from projects addressing a wide range of real-world problems.
-
-During the defense, I presented the project's technical innovations, system design, application scenarios, and development roadmap. I also listened carefully to the judges' suggestions concerning product design, operational reliability, practical deployment, and technology transfer. Their feedback was valuable for identifying the difference between a successful research prototype and a mature engineering product.
-
-## First Prize in the Future Information Track
-
-After the final, I was invited to the award ceremony in Beijing E-Town, also known as Yizhuang. The project received First Prize and ranked first in the Future Information Track. Hearing the result was both exciting and deeply rewarding. The award recognized the technical value of the project and also affirmed the sustained GNSS-IR research and development behind it.
-
-Moving from research papers to a prototype system and then to an innovation project has changed how I view the role of scientific work. Research outcomes can contribute not only through academic publication, but also through engineering products that address practical needs. I plan to continue improving the low-cost GNSS-IR monitoring system, strengthen its performance and operational reliability, and advance it toward real deployments in environmental and hydrological monitoring.
 
 </div>
 
@@ -57,30 +54,67 @@ Moving from research papers to a prototype system and then to an innovation proj
 
 项目展示不仅介绍了 GNSS 干涉反射的核心原理，还系统呈现了完整的技术架构，包括低成本接收机硬件、天线配置、数据采集、远程通信、边缘与云端处理、系统维护以及潜在应用场景。以这种形式梳理项目，让我能够将科学研究方法与一个可部署监测系统的实际需求连接起来。
 
+</div>
+
+<div data-lang-en markdown="1">
+
+## Final presentation and expert feedback
+
+Following the preliminary evaluation, the project advanced to the final round. The final competition was held on December 3, 2025, at Beijing University of Technology, where I delivered an on-site presentation and answered questions from the judging panel. The event brought together outstanding innovation teams from different universities and disciplines, creating an opportunity to compare solutions and learn from projects addressing a wide range of real-world problems.
+
+During the defense, I presented the project's technical innovations, system design, application scenarios, and development roadmap. I also listened carefully to the judges' suggestions concerning product design, operational reliability, practical deployment, and technology transfer. Their feedback was valuable for identifying the difference between a successful research prototype and a mature engineering product.
+
+</div>
+
+<div data-lang-zh markdown="1">
+
 ## 决赛现场展示与专家建议
 
 经过前期评审，项目顺利进入决赛。决赛于 2025 年 12 月 3 日在北京工业大学举行，我进行了现场项目展示和答辩。比赛汇集了来自不同高校和专业方向的优秀创新团队，让我有机会了解其他团队如何利用不同技术解决实际问题。
 
 在现场答辩中，我介绍了项目的技术创新点、系统设计、应用场景和后续发展思路，同时认真听取了评委专家关于产品设计、运行可靠性、实际部署和成果转化等方面的建议。这些反馈帮助我更加清楚地认识到，一个能够工作的科研原型与一个成熟工程产品之间仍然存在许多需要持续完善的环节。
 
+</div>
+
+<figure class="blog-figure">
+  <img src="/assets/img/blog/1226-innovation-final-defense.jpeg" alt="Ruixian Hao presenting the low-cost GNSS-IR system during the final defense" loading="lazy">
+  <figcaption><span data-lang-en>Presenting the project during the final defense at Beijing University of Technology.</span><span data-lang-zh>在北京工业大学进行决赛现场答辩。</span></figcaption>
+</figure>
+
+<div data-lang-en markdown="1">
+
+## First Prize in the Future Information Track
+
+After the final, I was invited to the award ceremony in Beijing E-Town, also known as Yizhuang. The project received First Prize and ranked first in the Future Information Track. Hearing the result was both exciting and deeply rewarding. The award recognized the technical value of the project and also affirmed the sustained GNSS-IR research and development behind it.
+
+</div>
+
+<div data-lang-zh markdown="1">
+
 ## 获得未来信息赛道一等奖
 
 决赛之后，我又受邀参加了在北京经济技术开发区（亦庄）举行的赛事颁奖典礼。最终，项目获得未来信息赛道一等奖，并取得第一名。当听到最终结果时，我感到非常激动，也十分自豪。这项荣誉不仅是对项目技术创新性的认可，也是对过去几年持续开展 GNSS-IR 研究和系统开发工作的肯定。
 
-从科研论文到原型系统，再到创新创业项目，这段经历让我越来越深刻地体会到，科研成果不仅可以发表在学术期刊上，也能够以工程产品的形式服务于实际需求。未来，我希望继续完善低成本 GNSS-IR 水位监测系统，不断提升系统性能和工程可靠性，推动这项技术真正走向环境和水文监测的实际应用。
+</div>
+
+<figure class="blog-figure">
+  <img src="/assets/img/blog/1226-innovation-award-speech.jpeg" alt="Ruixian Hao speaking at the award ceremony after ranking first in the Future Information Track" loading="lazy">
+  <figcaption><span data-lang-en>Speaking at the award ceremony in Beijing E-Town.</span><span data-lang-zh>在北京亦庄举行的颁奖典礼上作为第一名发言。</span></figcaption>
+</figure>
+
+<figure class="blog-figure">
+  <img src="/assets/img/blog/1226-innovation-first-prize-certificate.jpeg" alt="First Prize certificate from the Beijing University Innovation Scenario Challenge" loading="lazy">
+  <figcaption><span data-lang-en>The First Prize certificate for the Future Information Track.</span><span data-lang-zh>未来信息赛道一等奖（第一名）获奖证书。</span></figcaption>
+</figure>
+
+<div data-lang-en markdown="1">
+
+Moving from research papers to a prototype system and then to an innovation project has changed how I view the role of scientific work. Research outcomes can contribute not only through academic publication, but also through engineering products that address practical needs. I plan to continue improving the low-cost GNSS-IR monitoring system, strengthen its performance and operational reliability, and advance it toward real deployments in environmental and hydrological monitoring.
 
 </div>
 
-## <span data-lang-en>Competition and award photos</span><span data-lang-zh>决赛与颁奖照片</span>
+<div data-lang-zh markdown="1">
 
-![Ruixian Hao presenting the low-cost GNSS-IR system during the final defense.](/assets/img/blog/1226-innovation-final-defense.jpeg)
+从科研论文到原型系统，再到创新创业项目，这段经历让我越来越深刻地体会到，科研成果不仅可以发表在学术期刊上，也能够以工程产品的形式服务于实际需求。未来，我希望继续完善低成本 GNSS-IR 水位监测系统，不断提升系统性能和工程可靠性，推动这项技术真正走向环境和水文监测的实际应用。
 
-<span data-lang-en>_Presenting the project during the final defense at Beijing University of Technology._</span><span data-lang-zh>_在北京工业大学进行决赛现场答辩。_</span>
-
-![Ruixian Hao speaking at the award ceremony after ranking first in the Future Information Track.](/assets/img/blog/1226-innovation-award-speech.jpeg)
-
-<span data-lang-en>_Speaking at the award ceremony in Beijing E-Town._</span><span data-lang-zh>_在北京亦庄举行的颁奖典礼上作为第一名发言。_</span>
-
-![First Prize certificate from the Beijing University Innovation Scenario Challenge.](/assets/img/blog/1226-innovation-first-prize-certificate.jpeg)
-
-<span data-lang-en>_The First Prize certificate for the Future Information Track._</span><span data-lang-zh>_未来信息赛道一等奖（第一名）获奖证书。_</span>
+</div>
