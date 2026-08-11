@@ -27,17 +27,17 @@ This project connects two studies of **tropospheric scale height**. The first us
 
 </div>
 
-<h2 id="definition" data-toc-text-en="Scale height" data-toc-text-zh="尺度高度定义"><span data-lang-en>Scale height and research scope</span><span data-lang-zh>尺度高度与研究范围</span></h2>
+<h2 id="definition" data-toc-text="Scale height" data-toc-text-en="Scale height" data-toc-text-zh="尺度高度定义"><span data-lang-en>Scale height and research scope</span><span data-lang-zh>尺度高度与研究范围</span></h2>
 
 <div data-lang-en markdown="1">
 
-Scale height describes the vertical decay of an atmospheric parameter. If a parameter at reference height \(h*s\) is \(p*{v,s}\), its vertical profile can be approximated by
+Scale height describes the vertical decay of an atmospheric parameter. If a parameter at reference height h<sub>s</sub> is p<sub>v,s</sub>, its vertical profile can be approximated by
 
 </div>
 
 <div data-lang-zh markdown="1">
 
-尺度高度用于描述大气参数随高程衰减的速度。若参数在参考高程 \(h*s\) 处的值为 \(p*{v,s}\)，其垂直廓线可近似表示为
+尺度高度用于描述大气参数随高程衰减的速度。若参数在参考高程 h<sub>s</sub> 处的值为 p<sub>v,s</sub>，其垂直廓线可近似表示为
 
 </div>
 
@@ -47,19 +47,19 @@ $$
 
 <div data-lang-en markdown="1">
 
-At one scale height above the reference level, the parameter falls to \(1/e\), or about 36.7% of its reference value. A single fitted coefficient therefore summarizes a full vertical profile and can be used to normalize observations between stations at different elevations.
+At one scale height above the reference level, the parameter falls to 1/e, or about 36.7% of its reference value. A single fitted coefficient therefore summarizes a full vertical profile and can be used to normalize observations between stations at different elevations.
 
 </div>
 
 <div data-lang-zh markdown="1">
 
-当高程增加一个尺度高度时，参数衰减到参考值的 \(1/e\)，即约 36.7%。因此，一个拟合参数即可概括整条垂直廓线，并可用于不同高程测站之间的观测归算。
+当高程增加一个尺度高度时，参数衰减到参考值的 1/e，即约 36.7%。因此，一个拟合参数即可概括整条垂直廓线，并可用于不同高程测站之间的观测归算。
 
 </div>
 
-<h2 id="china-study" data-toc-text-en="China study" data-toc-text-zh="中国区域研究"><span data-lang-en>Study I · Water-vapor scale height over China</span><span data-lang-zh>研究一 · 中国区域水汽尺度高度</span></h2>
+<h2 id="china-study" data-toc-text="China study" data-toc-text-en="China study" data-toc-text-zh="中国区域研究"><span data-lang-en>Study I · Water-vapor scale height over China</span><span data-lang-zh>研究一 · 中国区域水汽尺度高度</span></h2>
 
-<h3 id="china-background" data-toc-text-en="Background and data" data-toc-text-zh="背景与数据"><span data-lang-en>Background, data, and climate zones</span><span data-lang-zh>研究背景、数据与气候分区</span></h3>
+<h3 id="china-background" data-toc-text="Background and data" data-toc-text-en="Background and data" data-toc-text-zh="背景与数据"><span data-lang-en>Background, data, and climate zones</span><span data-lang-zh>研究背景、数据与气候分区</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -82,7 +82,7 @@ The analysis used observations from **89 radiosonde stations** obtained from the
   <p class="project-caption"><span data-lang-en>Figure 1. Distribution of the 89 radiosonde stations and the four climate zones used in the regional analysis.</span><span data-lang-zh>图 1. 89 个无线电探空站及区域分析采用的四类气候分区。</span></p>
 </div>
 
-<h3 id="china-method" data-toc-text-en="Calculation" data-toc-text-zh="计算方法"><span data-lang-en>Water-vapor scale-height calculation</span><span data-lang-zh>水汽尺度高度计算</span></h3>
+<h3 id="china-method" data-toc-text="Calculation" data-toc-text-en="Calculation" data-toc-text-zh="计算方法"><span data-lang-en>Water-vapor scale-height calculation</span><span data-lang-zh>水汽尺度高度计算</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -113,7 +113,7 @@ Only profiles passing completeness and physical-range checks were retained. Leas
 
 </div>
 
-<h3 id="china-spatial" data-toc-text-en="Spatial pattern" data-toc-text-zh="空间分布"><span data-lang-en>Spatial distribution</span><span data-lang-zh>空间分布特征</span></h3>
+<h3 id="china-spatial" data-toc-text="Spatial pattern" data-toc-text-en="Spatial pattern" data-toc-text-zh="空间分布"><span data-lang-en>Spatial distribution</span><span data-lang-zh>空间分布特征</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -154,7 +154,7 @@ Annual mean water-vapor scale height ranged from approximately **1.78 to 3.02 km
 
 </div>
 
-<h3 id="china-temporal" data-toc-text-en="Temporal variation" data-toc-text-zh="时间变化"><span data-lang-en>Monthly, seasonal, and diurnal variation</span><span data-lang-zh>月际、季节与日内变化</span></h3>
+<h3 id="china-temporal" data-toc-text="Temporal variation" data-toc-text-en="Temporal variation" data-toc-text-zh="时间变化"><span data-lang-en>Monthly, seasonal, and diurnal variation</span><span data-lang-zh>月际、季节与日内变化</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -195,7 +195,7 @@ At most stations, the 12 UTC value exceeded the 00 UTC value. The difference was
   <p class="project-caption"><span data-lang-en>Figure 5. Frequency distributions of scale height at 00 and 12 UTC for each climate zone.</span><span data-lang-zh>图 5. 各气候区 00 UTC 与 12 UTC 尺度高度的频率分布。</span></p>
 </div>
 
-<h3 id="china-trend" data-toc-text-en="Trends and cycles" data-toc-text-zh="趋势与周期"><span data-lang-en>Trends, periodicity, and meteorological controls</span><span data-lang-zh>趋势、周期及气象影响因素</span></h3>
+<h3 id="china-trend" data-toc-text="Trends and cycles" data-toc-text-en="Trends and cycles" data-toc-text-zh="趋势与周期"><span data-lang-en>Trends, periodicity, and meteorological controls</span><span data-lang-zh>趋势、周期及气象影响因素</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -243,13 +243,13 @@ Periodograms identified both annual and semiannual signals. The fitted annual am
 
 <div data-lang-en markdown="1">
 
-PWV, temperature, and surface pressure were generally positively correlated with water-vapor scale height, but their relative importance depended on climate. PWV gave the strongest regional mean correlation in the subtropical monsoon zone (\(r=0.56\)); temperature and pressure both averaged \(r=0.44\) in the temperate monsoon zone; temperature was strongest in the temperate continental (\(r=0.40\)) and alpine plateau (\(r=0.56\)) zones. Vapor-pressure correlations were usually weaker, although several stations exceeded 0.8.
+PWV, temperature, and surface pressure were generally positively correlated with water-vapor scale height, but their relative importance depended on climate. PWV gave the strongest regional mean correlation in the subtropical monsoon zone (r = 0.56); temperature and pressure both averaged r = 0.44 in the temperate monsoon zone; temperature was strongest in the temperate continental (r = 0.40) and alpine plateau (r = 0.56) zones. Vapor-pressure correlations were usually weaker, although several stations exceeded 0.8.
 
 </div>
 
 <div data-lang-zh markdown="1">
 
-总体而言，PWV、温度和地面气压均与水汽尺度高度呈正相关，但不同气候区的主导因素不同。亚热带季风区以 PWV 的区域平均相关性最强（\(r=0.56\)）；温带季风区温度与气压的平均相关系数均为 \(r=0.44\)；温带大陆性与高原山地区则以温度最强，分别为 \(r=0.40\) 和 \(r=0.56\)。水汽压的整体相关性较弱，但部分测站仍超过 0.8。
+总体而言，PWV、温度和地面气压均与水汽尺度高度呈正相关，但不同气候区的主导因素不同。亚热带季风区以 PWV 的区域平均相关性最强（r = 0.56）；温带季风区温度与气压的平均相关系数均为 r = 0.44；温带大陆性与高原山地区则以温度最强，分别为 r = 0.40 和 r = 0.56。水汽压的整体相关性较弱，但部分测站仍超过 0.8。
 
 </div>
 
@@ -258,9 +258,9 @@ PWV, temperature, and surface pressure were generally positively correlated with
   <p class="project-caption"><span data-lang-en>Figure 10. Station correlations with PWV, temperature, pressure, and vapor pressure.</span><span data-lang-zh>图 10. 尺度高度与 PWV、温度、气压和水汽压的测站相关性。</span></p>
 </div>
 
-<h2 id="era5-sh" data-toc-text-en="ERA5-SH dataset" data-toc-text-zh="ERA5-SH 数据集"><span data-lang-en>Study II · Global ERA5-SH dataset</span><span data-lang-zh>研究二 · 全球 ERA5-SH 数据集</span></h2>
+<h2 id="era5-sh" data-toc-text="ERA5-SH dataset" data-toc-text-en="ERA5-SH dataset" data-toc-text-zh="ERA5-SH 数据集"><span data-lang-en>Study II · Global ERA5-SH dataset</span><span data-lang-zh>研究二 · 全球 ERA5-SH 数据集</span></h2>
 
-<h3 id="era5-motivation" data-toc-text-en="Parameters and inputs" data-toc-text-zh="参数与输入"><span data-lang-en>Motivation, parameters, and source data</span><span data-lang-zh>研究动机、参数与源数据</span></h3>
+<h3 id="era5-motivation" data-toc-text="Parameters and inputs" data-toc-text-en="Parameters and inputs" data-toc-text-zh="参数与输入"><span data-lang-en>Motivation, parameters, and source data</span><span data-lang-zh>研究动机、参数与源数据</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -312,7 +312,7 @@ ERA5 temperature, geopotential, relative humidity, and specific humidity were sa
 
 </div>
 
-<h3 id="era5-production" data-toc-text-en="Production workflow" data-toc-text-zh="生产流程"><span data-lang-en>Production, profile calculation, and fitting</span><span data-lang-zh>数据生产、廓线计算与拟合</span></h3>
+<h3 id="era5-production" data-toc-text="Production workflow" data-toc-text-en="Production workflow" data-toc-text-zh="生产流程"><span data-lang-en>Production, profile calculation, and fitting</span><span data-lang-zh>数据生产、廓线计算与拟合</span></h3>
 
 <div class="project-figure project-figure--portrait">
   {% include figure.liquid loading="lazy" path="assets/img/projects/era5-sh-workflow.jpg" title="ERA5-SH production and validation workflow" class="img-fluid" %}
@@ -365,7 +365,7 @@ PWV 通过比湿在气压层上的逐层积分获得。各类累积或瞬时垂�
 
 </div>
 
-<h3 id="era5-validation" data-toc-text-en="Fit and validation" data-toc-text-zh="拟合与验证"><span data-lang-en>Profile fitting and radiosonde validation</span><span data-lang-zh>廓线拟合与探空验证</span></h3>
+<h3 id="era5-validation" data-toc-text="Fit and validation" data-toc-text-en="Fit and validation" data-toc-text-zh="拟合与验证"><span data-lang-en>Profile fitting and radiosonde validation</span><span data-lang-zh>廓线拟合与探空验证</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -425,7 +425,7 @@ PWVSH、WVSH、TmSH、ZTDSH、ZHDSH 和 ZWDSH 的平均廓线拟合决定系数�
   <p class="project-caption"><span data-lang-en>Figure 15. Time-series comparison at representative stations, illustrating parameter-dependent accuracy and seasonal behavior.</span><span data-lang-zh>图 15. 代表性测站的时间序列比较，展示不同参数的精度与季节行为。</span></p>
 </div>
 
-<h3 id="era5-characteristics" data-toc-text-en="Dataset characteristics" data-toc-text-zh="数据特征"><span data-lang-en>Spatial and temporal characteristics</span><span data-lang-zh>空间与时间特征</span></h3>
+<h3 id="era5-characteristics" data-toc-text="Dataset characteristics" data-toc-text-en="Dataset characteristics" data-toc-text-zh="数据特征"><span data-lang-en>Spatial and temporal characteristics</span><span data-lang-zh>空间与时间特征</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -471,7 +471,7 @@ Latitude-band analysis shows opposite seasonal phases between the Northern and S
   <p class="project-caption"><span data-lang-en>Figure 19. Hourly scale-height series at 120°E, 30°N, showing the very different ranges of the six parameters.</span><span data-lang-zh>图 19. 120°E、30°N 格点的逐小时尺度高度序列，展示六类参数不同的数值范围。</span></p>
 </div>
 
-<h3 id="era5-application" data-toc-text-en="GNSS application" data-toc-text-zh="GNSS 应用"><span data-lang-en>ZTD height correction at global GNSS stations</span><span data-lang-zh>全球 GNSS 测站 ZTD 高程改正</span></h3>
+<h3 id="era5-application" data-toc-text="GNSS application" data-toc-text-en="GNSS application" data-toc-text-zh="GNSS 应用"><span data-lang-en>ZTD height correction at global GNSS stations</span><span data-lang-zh>全球 GNSS 测站 ZTD 高程改正</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -495,14 +495,14 @@ The application experiment screened **91,088,258** ZTD estimates from **12,552 G
   <p class="project-caption"><span data-lang-en>Figure 21. RMSE and bias as functions of station elevation, demonstrating the value of explicit height correction.</span><span data-lang-zh>图 21. RMSE 与 Bias 随测站高程的变化，显示显式高程改正的作用。</span></p>
 </div>
 
-<h3 id="era5-technical" data-toc-text-en="Technical details" data-toc-text-zh="技术细节"><span data-lang-en>Height conversion, surface correction, and periodic model</span><span data-lang-zh>高程转换、地表改正与周期模型</span></h3>
+<h3 id="era5-technical" data-toc-text="Technical details" data-toc-text-en="Technical details" data-toc-text-zh="技术细节"><span data-lang-en>Height conversion, surface correction, and periodic model</span><span data-lang-zh>高程转换、地表改正与周期模型</span></h3>
 
 <div data-lang-en markdown="1">
 
 Three technical steps are important for reproducibility:
 
 1. **Height system:** ERA5 geopotential is converted first to geopotential height and then to orthometric/geometric height with latitude-dependent gravity and Earth-radius terms; EGM2008 geoid undulation is added to obtain ellipsoidal height.
-2. **Surface meteorology:** temperature and relative humidity are linearly interpolated or extrapolated to the actual surface. Pressure uses exponential vertical interpolation with virtual temperature \(T_v=T(1+0.6077q)\).
+2. **Surface meteorology:** temperature and relative humidity are linearly interpolated or extrapolated to the actual surface. Pressure uses exponential vertical interpolation with virtual temperature T<sub>v</sub> = T(1 + 0.6077q).
 3. **Seasonal analysis:** annual and semiannual cycles are represented by
 
 </div>
@@ -512,7 +512,7 @@ Three technical steps are important for reproducibility:
 为保证结果可复现，计算中包含三个关键技术步骤：
 
 1. **高程系统：** ERA5 位势先转换为位势高，再结合随纬度变化的重力与地球半径项得到正高/几何高，最后叠加 EGM2008 大地水准面起伏得到椭球高。
-2. **地表气象改正：** 温度与相对湿度线性插值或外推至真实地表；气压使用含虚温 \(T_v=T(1+0.6077q)\) 的指数垂直插值。
+2. **地表气象改正：** 温度与相对湿度线性插值或外推至真实地表；气压使用含虚温 T<sub>v</sub> = T(1 + 0.6077q) 的指数垂直插值。
 3. **周期分析：** 年周期与半年周期表示为
 
 </div>
@@ -524,17 +524,17 @@ $$
 
 <div data-lang-en markdown="1">
 
-where \(d\) is day of year. This representation separates the climatological mean, annual component, and semiannual component without discarding the original hourly product.
+where d is day of year. This representation separates the climatological mean, annual component, and semiannual component without discarding the original hourly product.
 
 </div>
 
 <div data-lang-zh markdown="1">
 
-其中 \(d\) 为年积日。该模型在保留原始逐小时产品的同时，可分离气候平均项、年周期项和半年周期项。
+其中 d 为年积日。该模型在保留原始逐小时产品的同时，可分离气候平均项、年周期项和半年周期项。
 
 </div>
 
-<h2 id="data-code" data-toc-text-en="Data and code" data-toc-text-zh="数据与代码"><span data-lang-en>Data records and reproducible code</span><span data-lang-zh>数据记录与可复现代码</span></h2>
+<h2 id="data-code" data-toc-text="Data and code" data-toc-text-en="Data and code" data-toc-text-zh="数据与代码"><span data-lang-en>Data records and reproducible code</span><span data-lang-zh>数据记录与可复现代码</span></h2>
 
 <div data-lang-en markdown="1">
 
@@ -556,7 +556,7 @@ The released annual MATLAB files store compressed `int16` arrays together with `
 
 </div>
 
-<h2 id="publications" data-toc-text-en="Publications" data-toc-text-zh="相关论文"><span data-lang-en>Publications</span><span data-lang-zh>相关论文</span></h2>
+<h2 id="publications" data-toc-text="Publications" data-toc-text-en="Publications" data-toc-text-zh="相关论文"><span data-lang-en>Publications</span><span data-lang-zh>相关论文</span></h2>
 
 <div class="project-citation">
   Hao, R., Xu, T., Li, Z., Yang, F., Hao, Z., Tan, J., Gao, Y., &amp; Shu, Z. (2024). <a href="https://doi.org/10.1016/j.asr.2024.05.019">Spatial-temporal variation of water vapor scale height and its impact factors in different climate zones of China</a>. <em>Advances in Space Research, 74</em>(4), 1576–1585.

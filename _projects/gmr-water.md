@@ -27,7 +27,7 @@ toc:
 
 </div>
 
-<h2 id="background" data-toc-text-en="Research context" data-toc-text-zh="研究背景"><span data-lang-en>Research context and software objective</span><span data-lang-zh>研究背景与软件目标</span></h2>
+<h2 id="background" data-toc-text="Research context" data-toc-text-en="Research context" data-toc-text-zh="研究背景"><span data-lang-en>Research context and software objective</span><span data-lang-zh>研究背景与软件目标</span></h2>
 
 <div data-lang-en markdown="1">
 
@@ -45,17 +45,17 @@ Previous water-level tools commonly emphasized SNR observations, a single conste
 
 </div>
 
-<h2 id="principle" data-toc-text-en="GNSS-MR principle" data-toc-text-zh="GNSS-MR 原理"><span data-lang-en>Observation principle</span><span data-lang-zh>观测原理</span></h2>
+<h2 id="principle" data-toc-text="GNSS-MR principle" data-toc-text-en="GNSS-MR principle" data-toc-text-zh="GNSS-MR 原理"><span data-lang-en>Observation principle</span><span data-lang-zh>观测原理</span></h2>
 
 <div data-lang-en markdown="1">
 
-The antenna receives a direct signal with amplitude \(A_d\) and a water-reflected signal with amplitude \(A_r\). Their path difference changes with satellite elevation angle \(e\). For a locally horizontal reflector and antenna–water separation \(H\), the phase difference can be approximated by
+The antenna receives a direct signal with amplitude A<sub>d</sub> and a water-reflected signal with amplitude A<sub>r</sub>. Their path difference changes with satellite elevation angle e. For a locally horizontal reflector and antenna–water separation H, the phase difference can be approximated by
 
 </div>
 
 <div data-lang-zh markdown="1">
 
-GNSS 天线同时接收振幅为 \(A_d\) 的直达信号和振幅为 \(A_r\) 的水面反射信号。二者的传播路径差随卫星高度角 \(e\) 变化。对于局部水平反射面，若天线与水面的垂直距离为 \(H\)，相位差可近似表示为
+GNSS 天线同时接收振幅为 A<sub>d</sub> 的直达信号和振幅为 A<sub>r</sub> 的水面反射信号。二者的传播路径差随卫星高度角 e 变化。对于局部水平反射面，若天线与水面的垂直距离为 H，相位差可近似表示为
 
 </div>
 
@@ -65,7 +65,7 @@ $$
 
 <div data-lang-en markdown="1">
 
-where \(\lambda\) is wavelength and \(\phi_0\) is an initial phase. SNR residuals therefore oscillate approximately as a sinusoid in \(\sin e\). Spectral analysis estimates the dominant frequency and converts it to reflection height; inverse modeling estimates \(H\) directly in the observation equation. Carrier-phase and pseudorange combinations isolate multipath terms by eliminating or reducing geometric distance, clock error, ionospheric delay, and other common components.
+where λ is wavelength and φ<sub>0</sub> is an initial phase. SNR residuals therefore oscillate approximately as a sinusoid in sin(e). Spectral analysis estimates the dominant frequency and converts it to reflection height; inverse modeling estimates H directly in the observation equation. Carrier-phase and pseudorange combinations isolate multipath terms by eliminating or reducing geometric distance, clock error, ionospheric delay, and other common components.
 
 Reflection height is not yet water level. Antenna reference height, tidal loading, tropospheric delay, the local reflection geometry, and a chosen vertical datum must be handled consistently before the result is compared with a tide gauge.
 
@@ -73,7 +73,7 @@ Reflection height is not yet water level. Antenna reference height, tidal loadin
 
 <div data-lang-zh markdown="1">
 
-其中 \(\lambda\) 为波长，\(\phi_0\) 为初始相位。因此，SNR 残差相对于 \(\sin e\) 近似呈正弦振荡；频谱法通过主频求取反射高度，反演模型则在观测方程中直接估计 \(H\)。载波相位和伪距组合通过消除或削弱几何距离、钟差、电离层延迟等共同项，分离多路径分量。
+其中 λ 为波长，φ<sub>0</sub> 为初始相位。因此，SNR 残差相对于 sin(e) 近似呈正弦振荡；频谱法通过主频求取反射高度，反演模型则在观测方程中直接估计 H。载波相位和伪距组合通过消除或削弱几何距离、钟差、电离层延迟等共同项，分离多路径分量。
 
 反射高度并不直接等于水位。与验潮记录比较之前，还需要统一处理天线参考高程、潮汐负荷、对流层延迟、局部反射几何和垂直基准。
 
@@ -84,7 +84,7 @@ Reflection height is not yet water level. Antenna reference height, tidal loadin
   <p class="project-caption"><span data-lang-en>Figure 1. Direct and reflected GNSS signals, reflection geometry, and the SNR spectral route from oscillation frequency to corrected reflection height.</span><span data-lang-zh>图 1. GNSS 直达与反射信号、反射几何，以及由 SNR 振荡频率获得改正后反射高度的频谱处理路线。</span></p>
 </div>
 
-<h2 id="models" data-toc-text-en="Retrieval models" data-toc-text-zh="反演模型"><span data-lang-en>Five retrieval strategies</span><span data-lang-zh>五类水位反演策略</span></h2>
+<h2 id="models" data-toc-text="Retrieval models" data-toc-text-en="Retrieval models" data-toc-text-zh="反演模型"><span data-lang-en>Five retrieval strategies</span><span data-lang-zh>五类水位反演策略</span></h2>
 
 <div data-lang-en markdown="1">
 
@@ -124,21 +124,21 @@ GMR-Water 实现五类模型体系，不再将分析限定于单一观测值。
 
 <div data-lang-en markdown="1">
 
-For SNR spectral retrieval, the low-elevation arc is detrended, converted to linear amplitude, and analyzed with a Lomb–Scargle periodogram because GNSS elevation samples are irregular in \(\sin e\). The strongest physically plausible peak gives \(H\). The inverse route fits the complete interference function and can avoid an explicit peak-picking step, but depends more strongly on initial values and parameter bounds.
+For SNR spectral retrieval, the low-elevation arc is detrended, converted to linear amplitude, and analyzed with a Lomb–Scargle periodogram because GNSS elevation samples are irregular in sin(e). The strongest physically plausible peak gives H. The inverse route fits the complete interference function and can avoid an explicit peak-picking step, but depends more strongly on initial values and parameter bounds.
 
-Carrier phase \(L_i\), pseudorange \(C_i\), wavelength, ambiguity, ionospheric delay, tropospheric delay, and multipath terms enter the multi-frequency combinations. Dual- and triple-frequency formulations trade error cancellation against noise amplification; the software exposes the combinations so that different systems and signals can be evaluated consistently.
+Carrier phase L<sub>i</sub>, pseudorange C<sub>i</sub>, wavelength, ambiguity, ionospheric delay, tropospheric delay, and multipath terms enter the multi-frequency combinations. Dual- and triple-frequency formulations trade error cancellation against noise amplification; the software exposes the combinations so that different systems and signals can be evaluated consistently.
 
 </div>
 
 <div data-lang-zh markdown="1">
 
-在 SNR 频谱反演中，首先对低高度角弧段去趋势并转换为线性振幅。由于 GNSS 观测在 \(\sin e\) 域并非等间隔采样，软件采用 Lomb–Scargle 周期图；物理范围内最强的谱峰用于估计 \(H\)。反演路线则拟合完整干涉函数，可省略显式峰值选择，但对初值与参数边界更敏感。
+在 SNR 频谱反演中，首先对低高度角弧段去趋势并转换为线性振幅。由于 GNSS 观测在 sin(e) 域并非等间隔采样，软件采用 Lomb–Scargle 周期图；物理范围内最强的谱峰用于估计 H。反演路线则拟合完整干涉函数，可省略显式峰值选择，但对初值与参数边界更敏感。
 
-多频组合涉及载波相位 \(L_i\)、伪距 \(C_i\)、波长、整周模糊度、电离层延迟、对流层延迟与多路径项。双频和三频模型需要在误差消除与噪声放大之间权衡；软件统一开放这些组合，便于不同系统和信号在相同条件下评估。
+多频组合涉及载波相位 L<sub>i</sub>、伪距 C<sub>i</sub>、波长、整周模糊度、电离层延迟、对流层延迟与多路径项。双频和三频模型需要在误差消除与噪声放大之间权衡；软件统一开放这些组合，便于不同系统和信号在相同条件下评估。
 
 </div>
 
-<h2 id="software" data-toc-text-en="Software workflow" data-toc-text-zh="软件流程"><span data-lang-en>Software architecture and processing workflow</span><span data-lang-zh>软件架构与处理流程</span></h2>
+<h2 id="software" data-toc-text="Software workflow" data-toc-text-en="Software workflow" data-toc-text-zh="软件流程"><span data-lang-en>Software architecture and processing workflow</span><span data-lang-zh>软件架构与处理流程</span></h2>
 
 <div data-lang-en markdown="1">
 
@@ -169,7 +169,7 @@ The implementation separates data preparation, arc extraction, model inversion, 
   <p class="project-caption"><span data-lang-en>Figure 2. Processing architecture from input preparation and observation extraction to five retrieval models, correction, combination, and validation.</span><span data-lang-zh>图 2. 从输入准备、观测提取到五类反演模型、误差改正、组合与验证的软件架构。</span></p>
 </div>
 
-<h3 id="systems" data-toc-text-en="Systems and signals" data-toc-text-zh="系统与信号"><span data-lang-en>Constellations, observations, and execution modes</span><span data-lang-zh>卫星系统、观测值与运行方式</span></h3>
+<h3 id="systems" data-toc-text="Systems and signals" data-toc-text-en="Systems and signals" data-toc-text-zh="系统与信号"><span data-lang-en>Constellations, observations, and execution modes</span><span data-lang-zh>卫星系统、观测值与运行方式</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -187,7 +187,7 @@ AT01 实验展示了对 GPS L1/L2/L5、GLONASS G1/G2、Galileo E1/E5a/E5b/E5/E6�
 
 </div>
 
-<h3 id="corrections" data-toc-text-en="Correction and fusion" data-toc-text-zh="改正与融合"><span data-lang-en>Error correction and multi-source combination</span><span data-lang-zh>误差改正与多源组合</span></h3>
+<h3 id="corrections" data-toc-text="Correction and fusion" data-toc-text-en="Correction and fusion" data-toc-text-zh="改正与融合"><span data-lang-en>Error correction and multi-source combination</span><span data-lang-zh>误差改正与多源组合</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -205,9 +205,9 @@ Individual GNSS-MR estimates are irregular in time because each satellite arc ha
 
 </div>
 
-<h2 id="experiment" data-toc-text-en="AT01 experiment" data-toc-text-zh="AT01 实验"><span data-lang-en>AT01 coastal validation experiment</span><span data-lang-zh>AT01 海岸测站验证实验</span></h2>
+<h2 id="experiment" data-toc-text="AT01 experiment" data-toc-text-en="AT01 experiment" data-toc-text-zh="AT01 实验"><span data-lang-en>AT01 coastal validation experiment</span><span data-lang-zh>AT01 海岸测站验证实验</span></h2>
 
-<h3 id="site" data-toc-text-en="Site and reference" data-toc-text-zh="测站与参考"><span data-lang-en>Station geometry and tide-gauge reference</span><span data-lang-zh>测站几何与验潮参考</span></h3>
+<h3 id="site" data-toc-text="Site and reference" data-toc-text-en="Site and reference" data-toc-text-zh="测站与参考"><span data-lang-en>Station geometry and tide-gauge reference</span><span data-lang-zh>测站几何与验潮参考</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -230,7 +230,7 @@ Reference observations came from NOAA tide station **9468333**, approximately 74
   <p class="project-caption"><span data-lang-en>Figure 3. Location of AT01 and NOAA 9468333, station photographs, and first Fresnel zones for selected elevation angles.</span><span data-lang-zh>图 3. AT01 与 NOAA 9468333 的位置、测站照片及不同高度角对应的第一菲涅尔区。</span></p>
 </div>
 
-<h3 id="snr-results" data-toc-text-en="SNR results" data-toc-text-zh="SNR 结果"><span data-lang-en>Multi-GNSS SNR retrieval</span><span data-lang-zh>多系统 SNR 水位反演</span></h3>
+<h3 id="snr-results" data-toc-text="SNR results" data-toc-text-en="SNR results" data-toc-text-zh="SNR 结果"><span data-lang-en>Multi-GNSS SNR retrieval</span><span data-lang-zh>多系统 SNR 水位反演</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -253,7 +253,7 @@ The results show why multi-GNSS processing matters operationally. A single frequ
   <p class="project-caption"><span data-lang-en>Figure 4. GPS, GLONASS, Galileo, and BDS SNR retrievals, including per-signal RMSE and daily sampling counts.</span><span data-lang-zh>图 4. GPS、GLONASS、Galileo 与 BDS 的 SNR 反演结果，包括各信号 RMSE 和日均采样数。</span></p>
 </div>
 
-<h3 id="combination-results" data-toc-text-en="Combination results" data-toc-text-zh="组合结果"><span data-lang-en>Robust regression and B-spline combination</span><span data-lang-zh>稳健回归与 B 样条组合</span></h3>
+<h3 id="combination-results" data-toc-text="Combination results" data-toc-text-en="Combination results" data-toc-text-zh="组合结果"><span data-lang-en>Robust regression and B-spline combination</span><span data-lang-zh>稳健回归与 B 样条组合</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -272,7 +272,7 @@ The correlation with the tide gauge was **0.935** for the uncombined retrievals.
   <p class="project-caption"><span data-lang-en>Figure 5. Raw track-level solutions and uniformly sampled series from robust regression and B-spline fitting.</span><span data-lang-zh>图 5. 原始弧段解，以及稳健回归和 B 样条拟合形成的等间隔水位序列。</span></p>
 </div>
 
-<h3 id="carrier-results" data-toc-text-en="Carrier results" data-toc-text-zh="载波结果"><span data-lang-en>Carrier-phase and other observation combinations</span><span data-lang-zh>载波相位与其他观测组合</span></h3>
+<h3 id="carrier-results" data-toc-text="Carrier results" data-toc-text-en="Carrier results" data-toc-text-zh="载波结果"><span data-lang-en>Carrier-phase and other observation combinations</span><span data-lang-zh>载波相位与其他观测组合</span></h3>
 
 <div data-lang-en markdown="1">
 
@@ -295,7 +295,7 @@ The complete software also implements the SNR inverse model, carrier–pseudoran
   <p class="project-caption"><span data-lang-en>Figure 6. Triple-frequency carrier-phase results for GPS, Galileo, and BDS, with tide-gauge comparison and sampling statistics.</span><span data-lang-zh>图 6. GPS、Galileo 与 BDS 三频载波相位结果、验潮对比及采样统计。</span></p>
 </div>
 
-<h2 id="reproducibility" data-toc-text-en="Reproducibility" data-toc-text-zh="复现说明"><span data-lang-en>Data, operation, and reproducibility</span><span data-lang-zh>数据、运行与复现说明</span></h2>
+<h2 id="reproducibility" data-toc-text="Reproducibility" data-toc-text-en="Reproducibility" data-toc-text-zh="复现说明"><span data-lang-en>Data, operation, and reproducibility</span><span data-lang-zh>数据、运行与复现说明</span></h2>
 
 <div data-lang-en markdown="1">
 
@@ -319,7 +319,7 @@ AT01 GNSS observations used in the paper are available through the PBO/EarthScop
 
 </div>
 
-<h2 id="conclusions" data-toc-text-en="Conclusions" data-toc-text-zh="结论"><span data-lang-en>Conclusions and current limitations</span><span data-lang-zh>结论与当前局限</span></h2>
+<h2 id="conclusions" data-toc-text="Conclusions" data-toc-text-en="Conclusions" data-toc-text-zh="结论"><span data-lang-en>Conclusions and current limitations</span><span data-lang-zh>结论与当前局限</span></h2>
 
 <div data-lang-en markdown="1">
 
@@ -337,7 +337,7 @@ AT01 是海岸环境下的示范实验，并不代表所有测站都能获得相
 
 </div>
 
-<h2 id="publication" data-toc-text-en="Publication" data-toc-text-zh="论文引文"><span data-lang-en>Publication</span><span data-lang-zh>论文引文</span></h2>
+<h2 id="publication" data-toc-text="Publication" data-toc-text-en="Publication" data-toc-text-zh="论文引文"><span data-lang-en>Publication</span><span data-lang-zh>论文引文</span></h2>
 
 <div class="project-citation">
   Yang, F., &amp; Hao, R. (2026). <a href="https://doi.org/10.1007/s10291-026-02111-y">GMR-water: A water level retrieval software for multi-GNSS, multi-frequence and multi-observation based on GNSS-MR</a>. <em>GPS Solutions, 30</em>(3).
