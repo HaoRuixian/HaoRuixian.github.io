@@ -17,18 +17,34 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
       - name: Install Prettier 💾
-        run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
+        run: npm ci
       - name: Prettier Check 🔎
         id: prettier
-        run: npx prettier . --check
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          mapfile -d '' files < <(git diff --name-only --diff-filter=ACMRT -z "$BASE_SHA" "$GITHUB_SHA")
+          if (( ${#files[@]} )); then
+            npx prettier --check --ignore-unknown "${files[@]}"
+          else
+            echo "No changed files to check."
+          fi
       - name: Create diff 📝
         # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
-        if: ${{ failure() }}
+        if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: |
-          npx prettier . --write
+          mapfile -d '' files < <(git diff --name-only --diff-filter=ACMRT -z "$BASE_SHA" "$GITHUB_SHA")
+          npx prettier --write --ignore-unknown "${files[@]}"
           git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
