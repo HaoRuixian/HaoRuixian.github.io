@@ -24,8 +24,8 @@ software and data.
 
 - [ERA5-SH](https://github.com/HaoRuixian/ERA5-SH-dataset-for-troposphere-parameters-code-for-estimate-and-analysis):
   a global tropospheric scale-height dataset derived from ERA5 pressure-level
-  profiles and validated with 591 radiosonde stations.
-- [GMR-Water](https://github.com/HaoRuixian/GNSS-IR-Kit): open-source MATLAB
+  profiles and validated with 587 quality-controlled radiosonde stations.
+- [GMR-Water](https://github.com/GRseRG-CUMTB/GMR-Water): open-source MATLAB
   software for multi-GNSS, multi-frequency, and multi-observation water-level
   retrieval.
 - [Low-cost near-real-time GNSS-IR monitoring](https://haoruixian.github.io/blog/2026/ningbo-gnss-ir-field-experiment/):

@@ -68,7 +68,7 @@ projects:
       - Published as a first-author Scientific Data paper; data released on Zenodo with 2,873 combined downloads as of July 9, 2026.
 
   - name: GMR-Water
-    url: https://github.com/HaoRuixian/GNSS-IR-Kit
+    url: https://github.com/GRseRG-CUMTB/GMR-Water
     summary: Open-source MATLAB software for multi-GNSS, multi-frequency, and multi-observation GNSS-MR water-level retrieval.
     highlights:
       - Supports SNR, carrier-phase, and pseudorange strategies, batch processing, quality control, visualization, and accuracy evaluation.

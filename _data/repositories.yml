@@ -4,7 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - HaoRuixian/GNSS-IR-Kit
+  - GRseRG-CUMTB/GMR-Water
   - HaoRuixian/ERA5-SH-dataset-for-troposphere-parameters-code-for-estimate-and-analysis
   - HaoRuixian/RTGS
   - HaoRuixian/HaoRuixian.github.io
