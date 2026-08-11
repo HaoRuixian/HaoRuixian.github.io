@@ -18,14 +18,16 @@ layout: default
         {{ page.title }}
       {% endif %}
     </h1>
-    <p class="post-description">
-      {% if page.description_zh %}
-        <span data-lang-en>{{ page.description }}</span>
-        <span data-lang-zh>{{ page.description_zh }}</span>
-      {% else %}
-        {{ page.description }}
-      {% endif %}
-    </p>
+    {% if page.description %}
+      <p class="post-description">
+        {% if page.description_zh %}
+          <span data-lang-en>{{ page.description }}</span>
+          <span data-lang-zh>{{ page.description_zh }}</span>
+        {% else %}
+          {{ page.description }}
+        {% endif %}
+      </p>
+    {% endif %}
   </header>
 
   <article>
