@@ -60,14 +60,14 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-era5-sh-dataset",
-          title: 'ERA5-SH Dataset',
-          description: "Global gridded scale-height dataset for tropospheric parameters derived from ERA5 reanalysis.",
+          section: "News",},{id: "projects-tropospheric-scale-height-research",
+          title: 'Tropospheric Scale-Height Research',
+          description: "From regional water-vapor climatology to the global ERA5-SH dataset and height-correction applications.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/era5-sh-dataset/";
             },},{id: "projects-gmr-water",
           title: 'GMR-Water',
-          description: "MATLAB toolbox for high-precision water-level retrieval using GNSS multipath reflectometry.",
+          description: "Open-source MATLAB software for multi-GNSS, multi-frequency, and multi-observation GNSS-MR water-level retrieval.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/gmr-water/";
             },},{id: "projects-rtgs",
