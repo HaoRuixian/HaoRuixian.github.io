@@ -17,11 +17,35 @@ _styles: |
     margin: 1.25rem auto 0.5rem;
     object-fit: contain;
   }
+  .blog-figure {
+    margin: 1.75rem auto 2rem;
+    text-align: center;
+  }
+  .blog-figure figcaption {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
 ---
 
 <div data-lang-en markdown="1">
 
 On May 17, 2025, I attended the **2025 Comprehensive Academic Conference on Geodesy and Navigation and the Symposium on Geodetic Development** in Qingdao, Shandong Province, where I delivered my first formal academic oral presentation. As an undergraduate student, I felt honored to present my work at a high-level meeting in the field of geodesy.
+
+</div>
+
+<div data-lang-zh markdown="1">
+
+2025 年 5 月 17 日，我前往山东青岛参加了**大地测量与导航 2025 综合学术年会暨大地测量发展研讨会**，并受邀进行口头报告。这是我第一次在正式学术会议上汇报研究成果。能够以本科生身份在高水平的大地测量领域会议上展示自己的工作，我感到十分荣幸。
+
+</div>
+
+<figure class="blog-figure">
+  <img src="/assets/img/blog/0517-geodesy-navigation-presentation.jpeg" alt="Ruixian Hao delivering an academic oral presentation at the 2025 Geodesy and Navigation Conference" loading="lazy">
+  <figcaption><span data-lang-en>Delivering the academic oral presentation in Qingdao.</span><span data-lang-zh>在青岛进行学术口头报告。</span></figcaption>
+</figure>
+
+<div data-lang-en markdown="1">
 
 ## Moving beyond SNR-only sea-level retrieval
 
@@ -43,8 +67,6 @@ From organizing the research story and preparing the slides to answering questio
 
 <div data-lang-zh markdown="1">
 
-2025 年 5 月 17 日，我前往山东青岛参加了**大地测量与导航 2025 综合学术年会暨大地测量发展研讨会**，并受邀进行口头报告。这是我第一次在正式学术会议上汇报研究成果。能够以本科生身份在高水平的大地测量领域会议上展示自己的工作，我感到十分荣幸。
-
 ## 从单一 SNR 走向多类型观测值融合
 
 本次报告主要介绍了我近期围绕**多类型 GNSS 观测值融合的海（水）面高反演方法**开展的研究。传统 GNSS 干涉反射（GNSS-IR）方法主要依赖信噪比（SNR）观测量，而我们的工作进一步探索载波相位、伪距和 SNR 等不同观测值中反射信号信息的互补性，以提升海面高反演的精度与稳定性。
@@ -62,9 +84,3 @@ From organizing the research story and preparing the slides to answering questio
 从准备 PPT、梳理研究逻辑，到现场面对专家提问和交流，每一个环节都让我获得了宝贵经验。这次首次学术会议报告不仅提升了我的表达能力，也让我更加明确了继续深耕 GNSS-IR 技术及其环境监测应用的方向。
 
 </div>
-
-## <span data-lang-en>Conference photo</span><span data-lang-zh>会议照片</span>
-
-![Ruixian Hao delivering his first academic oral presentation at the 2025 Geodesy and Navigation Conference.](/assets/img/blog/0517-geodesy-navigation-presentation.jpeg)
-
-<span data-lang-en>_Delivering my first formal academic oral presentation in Qingdao._</span><span data-lang-zh>_在青岛进行首次正式学术口头报告。_</span>
