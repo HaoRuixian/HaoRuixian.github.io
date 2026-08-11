@@ -17,6 +17,15 @@ _styles: |
     margin: 1.25rem auto 0.5rem;
     object-fit: contain;
   }
+  .blog-figure {
+    margin: 1.75rem auto 2rem;
+    text-align: center;
+  }
+  .blog-figure figcaption {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
 ---
 
 <div data-lang-en markdown="1">
@@ -28,26 +37,6 @@ To better understand the performance limits of modern low-cost GNSS receivers, I
 This experiment was made possible by the generous support of Dr. Kai Guo, whom I had the privilege of working with during my internship at Beihang University. With his help, I was able to use the Huaxin HX-CGX611A choke-ring antenna installed on the rooftop of the Baiyan Building as the common signal source for every test receiver.
 
 Using one geodetic antenna for all devices is important for a fair evaluation. It removes differences caused by antenna quality, installation position, cable configuration, and local multipath conditions. Each receiver therefore observes the same satellite signals in the same environment, allowing performance differences to be attributed more confidently to the receiver hardware and processing software themselves.
-
-## A four-receiver parallel test platform
-
-To support the experiment, I designed and built a multi-receiver GNSS evaluation platform capable of operating four low-cost GNSS modules simultaneously. The antenna signal is passed through a GNSS RF splitter and distributed evenly to all receivers, enabling synchronized observation and a consistent data source for later analysis.
-
-The platform currently integrates several representative receivers: the Allystar UM982, u-blox ZED-F9P, Septentrio mosaic-X5, and SinoGNSS K827. Their synchronized observations can be used to evaluate data quality, positioning performance, cycle-slip and signal behavior, and the consistency of downstream algorithms across different hardware platforms.
-
-## Raspberry Pi control and reliable operation
-
-A Raspberry Pi 5 serves as the central controller for the entire test system. I also added an uninterruptible power supply (UPS) so that the platform can continue operating during temporary power interruptions or unstable supply conditions. This protects long-duration experiments from losing observations at the moment of a power event.
-
-In addition to the hardware integration, I developed a web-based management system for remote administration of all receivers. The dashboard displays receiver status, data output, and network connectivity in real time. It also supports remote configuration and command transmission, allowing the platform to be monitored and controlled through a browser without repeatedly accessing the equipment physically.
-
-## Data distribution and local archiving
-
-Each receiver can stream its real-time observations to multiple NTRIP Casters at the same time, which supports different downstream applications and data consumers. Meanwhile, all raw observations are archived locally on the Raspberry Pi. Maintaining a complete local archive is useful for offline analysis, algorithm validation, troubleshooting, and long-term performance evaluation.
-
-I developed the entire platform independently, including the hardware integration, embedded Linux deployment, network communication, web application, and system commissioning. The project has given me practical experience in GNSS receiver management, automated data acquisition, remote device control, and the design of reliable long-duration experiments.
-
-In the future, I plan to use this platform for systematic comparisons of low-cost GNSS modules and to investigate their potential in precise positioning, real-time GNSS-IR, PPP, and multi-sensor integration.
 
 </div>
 
@@ -61,17 +50,76 @@ In the future, I plan to use this platform for systematic comparisons of low-cos
 
 让所有接收机共用同一副大地测量天线，对于公平比较非常重要。这样可以尽量排除天线性能、安装位置、线缆配置以及周围多路径环境差异带来的影响，使不同设备在相同卫星信号和相同观测环境下工作，从而更加客观地分析接收机硬件和软件处理性能的差异。
 
+</div>
+
+<div data-lang-en markdown="1">
+
+## A four-receiver parallel test platform
+
+To support the experiment, I designed and built a multi-receiver GNSS evaluation platform capable of operating four low-cost GNSS modules simultaneously. The antenna signal is passed through a GNSS RF splitter and distributed evenly to all receivers, enabling synchronized observation and a consistent data source for later analysis.
+
+The platform currently integrates several representative receivers: the Allystar UM982, u-blox ZED-F9P, Septentrio mosaic-X5, and SinoGNSS K827. Their synchronized observations can be used to evaluate data quality, positioning performance, cycle-slip and signal behavior, and the consistency of downstream algorithms across different hardware platforms.
+
+</div>
+
+<div data-lang-zh markdown="1">
+
 ## 多接收机并行测试平台
 
 为了满足实验需求，我自主设计并搭建了一套多模组并行测试平台。整个平台可以同时接入四套低成本 GNSS 接收设备，并保证所有设备接收来自同一天线的卫星信号。天线信号经过 GNSS 射频功分器后，被均匀分配至各个接收机，实现同步观测，为后续观测质量分析、定位性能评估以及算法验证提供统一的数据来源。
 
 本次测试平台集成了多款具有代表性的 GNSS 接收机，包括 Allystar UM982、u-blox ZED-F9P、Septentrio mosaic-X5 以及司南导航 K827 等产品。不同设备的同步观测数据可以用于比较数据质量、定位性能、周跳和信号行为，以及不同硬件平台上后续算法处理结果的一致性。
 
+</div>
+
+<figure class="blog-figure">
+  <img src="/assets/img/blog/0330-prototype-platform.png" alt="The first low-cost GNSS receiver prototype assembled in a cardboard enclosure" loading="lazy">
+  <figcaption><span data-lang-en>The early prototype of the multi-receiver platform.</span><span data-lang-zh>最初使用自制纸箱搭建的设备原型。</span></figcaption>
+</figure>
+
+<figure class="blog-figure">
+  <img src="/assets/img/blog/0330-final-multi-receiver-platform.jpeg" alt="The final multi-receiver GNSS test platform deployed with the antenna splitter and receiver modules" loading="lazy">
+  <figcaption><span data-lang-en>The final deployed low-cost GNSS test platform.</span><span data-lang-zh>最终部署完成的低成本 GNSS 多模组测试平台。</span></figcaption>
+</figure>
+
+<div data-lang-en markdown="1">
+
+## Raspberry Pi control and reliable operation
+
+A Raspberry Pi 5 serves as the central controller for the entire test system. I also added an uninterruptible power supply (UPS) so that the platform can continue operating during temporary power interruptions or unstable supply conditions. This protects long-duration experiments from losing observations at the moment of a power event.
+
+In addition to the hardware integration, I developed a web-based management system for remote administration of all receivers. The dashboard displays receiver status, data output, and network connectivity in real time. It also supports remote configuration and command transmission, allowing the platform to be monitored and controlled through a browser without repeatedly accessing the equipment physically.
+
+</div>
+
+<div data-lang-zh markdown="1">
+
 ## 树莓派控制与稳定运行
 
 为了实现设备的自动化运行，我采用 Raspberry Pi 5 作为整个测试平台的控制中心，并配备 UPS 不间断电源。即使遇到短时断电或供电异常，平台仍能够持续稳定运行，避免长时间观测数据在关键时刻丢失。
 
 除了硬件平台之外，我还自主开发了一套 Web 管理系统，用于远程管理和监控所有测试设备。该系统能够实时显示各接收机的运行状态、数据输出情况以及网络连接状态，并支持远程发送控制指令，实现设备的在线配置和管理，减少反复进入设备现场进行操作的需要。
+
+</div>
+
+<figure class="blog-figure">
+  <img src="/assets/img/blog/0330-web-management-system.png" alt="The web management system showing the status and data streams of the GNSS receivers" loading="lazy">
+  <figcaption><span data-lang-en>The web-based monitoring and control interface.</span><span data-lang-zh>GNSS 设备 Web 远程管理与监控界面。</span></figcaption>
+</figure>
+
+<div data-lang-en markdown="1">
+
+## Data distribution and local archiving
+
+Each receiver can stream its real-time observations to multiple NTRIP Casters at the same time, which supports different downstream applications and data consumers. Meanwhile, all raw observations are archived locally on the Raspberry Pi. Maintaining a complete local archive is useful for offline analysis, algorithm validation, troubleshooting, and long-term performance evaluation.
+
+I developed the entire platform independently, including the hardware integration, embedded Linux deployment, network communication, web application, and system commissioning. The project has given me practical experience in GNSS receiver management, automated data acquisition, remote device control, and the design of reliable long-duration experiments.
+
+In the future, I plan to use this platform for systematic comparisons of low-cost GNSS modules and to investigate their potential in precise positioning, real-time GNSS-IR, PPP, and multi-sensor integration.
+
+</div>
+
+<div data-lang-zh markdown="1">
 
 ## 数据分发与本地归档
 
@@ -82,17 +130,3 @@ In the future, I plan to use this platform for systematic comparisons of low-cos
 未来，我计划利用这一平台持续开展不同 GNSS 模组之间的系统性能对比研究，并进一步探索其在高精度定位、实时 GNSS-IR、PPP 以及多传感器融合等方向上的应用潜力。
 
 </div>
-
-## <span data-lang-en>Platform photos</span><span data-lang-zh>测试平台照片</span>
-
-![The first low-cost GNSS receiver prototype assembled in a cardboard enclosure.](/assets/img/blog/0330-prototype-platform.png)
-
-<span data-lang-en>_The early prototype of the multi-receiver platform._</span><span data-lang-zh>_最初使用自制纸箱搭建的设备原型。_</span>
-
-![The final multi-receiver GNSS test platform deployed with the antenna splitter and receiver modules.](/assets/img/blog/0330-final-multi-receiver-platform.jpeg)
-
-<span data-lang-en>_The final deployed low-cost GNSS test platform._</span><span data-lang-zh>_最终部署完成的低成本 GNSS 多模组测试平台。_</span>
-
-![The web management system showing the status and data streams of the GNSS receivers.](/assets/img/blog/0330-web-management-system.png)
-
-<span data-lang-en>_The web-based monitoring and control interface._</span><span data-lang-zh>_GNSS 设备 Web 远程管理与监控界面。_</span>
