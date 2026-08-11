@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Delivering My First Academic Presentation at the 2025 Geodesy and Navigation Conference
-title_zh: 在大地测量与导航 2025 综合学术年会上作首次学术口头报告
+title: Presenting Multi-Observable GNSS-IR Research at the 2025 Geodesy and Navigation Conference
+title_zh: 在大地测量与导航 2025 综合学术年会上汇报多观测值 GNSS-IR 研究
 date: 2025-05-17
 description: Reflections on my first academic oral presentation and our multi-observable GNSS-IR sea-level retrieval framework at the 2025 Geodesy and Navigation Conference in Qingdao.
 tags: [GNSS-IR, sea-level monitoring, multi-observable GNSS, academic presentation]

@@ -25,7 +25,12 @@
         <div class="card-body">
           <h3 class="card-title">
             <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-              {{- project.title -}}
+              {% if project.title_zh %}
+                <span data-lang-en>{{ project.title }}</span>
+                <span data-lang-zh>{{ project.title_zh }}</span>
+              {% else %}
+                {{ project.title }}
+              {% endif %}
             </a>
           </h3>
           <p class="card-text">

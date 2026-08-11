@@ -22,6 +22,18 @@
     }
   }
 
+  function updateSidebarToc(lang) {
+    document.querySelectorAll('#toc-sidebar a[href^="#"]').forEach((link) => {
+      const headingId = decodeURIComponent(link.getAttribute("href").slice(1));
+      const heading = document.getElementById(headingId);
+      const label = lang === "zh" ? heading?.dataset.tocTextZh : heading?.dataset.tocTextEn;
+
+      if (label) {
+        link.textContent = label;
+      }
+    });
+  }
+
   function applyLanguage(lang) {
     const nextLang = normalizeLanguage(lang);
     root.dataset.lang = nextLang;
@@ -41,6 +53,9 @@
       button.setAttribute("title", isChinese ? "Switch to English" : "切换到中文");
       button.setAttribute("aria-label", isChinese ? "Switch to English" : "Switch to Chinese");
     });
+
+    updateSidebarToc(nextLang);
+    window.requestAnimationFrame(() => updateSidebarToc(nextLang));
 
     storeLanguage(nextLang);
   }
