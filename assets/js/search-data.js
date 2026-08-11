@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "Publication list for Ruixian Hao generated from BibTeX data.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -32,14 +32,14 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "Selected research datasets, GNSS software, and open-source engineering projects.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-repositories",
           title: "Repositories",
-          description: "Public GitHub repositories connected to Ruixian Hao&#39;s GNSS research and software work.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -62,12 +62,12 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-tropospheric-scale-height-research",
           title: 'Tropospheric Scale-Height Research',
-          description: "From regional water-vapor climatology to the global ERA5-SH dataset and height-correction applications.",
+          description: "Regional water-vapor climatology, the global ERA5-SH dataset, and height-correction applications.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/era5-sh-dataset/";
             },},{id: "projects-gmr-water",
           title: 'GMR-Water',
-          description: "Open-source MATLAB software for multi-GNSS, multi-frequency, and multi-observation GNSS-MR water-level retrieval.",
+          description: "Multi-GNSS, multi-frequency, and multi-observation GNSS-MR water-level retrieval.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/gmr-water/";
             },},{id: "projects-rtgs",
