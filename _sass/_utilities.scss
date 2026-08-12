@@ -451,6 +451,7 @@ nav[data-toggle="toc"] {
 // Allow sidebar-layout content to shrink below its intrinsic table/code width.
 // Overflow remains local to the responsive wrappers instead of widening mobile pages.
 .toc-content {
+  max-width: 100%;
   min-width: 0;
 }
 
