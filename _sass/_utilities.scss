@@ -455,6 +455,13 @@ nav[data-toggle="toc"] {
   min-width: 0;
 }
 
+@media (max-width: 575.98px) {
+  .toc-content {
+    flex: 0 0 100%;
+    overflow-x: hidden;
+  }
+}
+
 .echarts {
   height: 400px;
   width: 100%;
