@@ -448,6 +448,12 @@ nav[data-toggle="toc"] {
   z-index: 1;
 }
 
+// Allow sidebar-layout content to shrink below its intrinsic table/code width.
+// Overflow remains local to the responsive wrappers instead of widening mobile pages.
+.toc-content {
+  min-width: 0;
+}
+
 .echarts {
   height: 400px;
   width: 100%;
