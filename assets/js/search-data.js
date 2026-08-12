@@ -72,7 +72,7 @@ ninja.data = [{
               window.location.href = "/projects/gmr-water/";
             },},{id: "projects-rtgs",
           title: 'RTGS',
-          description: "RealTimeGNSS Studio, a Python project for practical real-time GNSS workflows.",
+          description: "Real-Time GNSS Studio for acquisition, monitoring, positioning, reflectometry, and standards-oriented data conversion.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/rtgs/";
             },},{id: "teachings-data-science-fundamentals",
