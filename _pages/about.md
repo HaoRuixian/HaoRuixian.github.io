@@ -33,6 +33,8 @@ Ruixian Hao is a geomatics researcher at the College of Geoscience and Surveying
 
 His research focuses on geoscience applications of low-cost GNSS receivers, high-precision GNSS-IR/GNSS-MR algorithms, and key tropospheric parameters for GNSS meteorology and atmospheric remote sensing.
 
+He has authored or co-authored 12 peer-reviewed journal articles, four as first author and two as second author, and has been invited to review for _Science of Remote Sensing_.
+
 His work connects low-cost observation platforms, multi-source GNSS observations, numerical reanalysis products, and independent validation data to build reproducible methods for environmental sensing, water-level monitoring, sea-surface-height retrieval, tropospheric delay correction, and water vapor characterization.
 
 Current project work includes a scale-height research program connecting regional water-vapor climatology with the global ERA5-SH dataset, and GMR-Water, a MATLAB software package for multi-GNSS, multi-frequency, and multi-observation water-level retrieval.
@@ -44,6 +46,8 @@ Publication details, paper figures, abstracts, datasets, and software links are 
 <div data-lang-zh markdown="1">
 
 郝睿贤就读于中国矿业大学（北京）地球科学与测绘工程学院，研究方向聚焦低成本 GNSS 接收机地学应用、高精度 GNSS-IR/GNSS-MR 反演算法，以及面向 GNSS 气象学和大气遥感的对流层关键参量研究。
+
+已发表 12 篇同行评审期刊论文，其中第一作者 4 篇、第二作者 2 篇，并受邀担任 _Science of Remote Sensing_ 期刊审稿人。
 
 相关研究围绕低成本观测平台、多源 GNSS 观测、数值再分析资料和独立验证数据展开，服务于地表环境感知、水位监测、海面高反演、对流层延迟改正与大气水汽结构刻画等应用。
 

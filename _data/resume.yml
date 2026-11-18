@@ -15,6 +15,8 @@ basics:
   summary: >
     Master's student working on GNSS meteorology, tropospheric parameter modeling,
     atmospheric water vapor, and GNSS reflectometry for water-level and sea-surface-height retrieval.
+    Author or co-author of 12 peer-reviewed journal articles (4 first-author and 2 second-author).
+    Invited reviewer for Science of Remote Sensing.
 
 education:
   - institution: China University of Mining and Technology - Beijing
@@ -76,6 +78,12 @@ projects:
 
 publications:
   - citation: >
+      **Hao, R.**, Yang, F., Meng, X., Xu, K., An, X., Li, Z., & Du, Y. (2026).
+      Multi-observation robust regression for continuous coastal sea surface height monitoring using GNSS multipath reflectometry.
+      *Measurement Science and Technology*. Accepted manuscript online 11 November 2026.
+      DOI: [10.1088/1361-6501/aec0bb](https://doi.org/10.1088/1361-6501/aec0bb).
+
+  - citation: >
       **Hao, R.**, Yang, F., Li, Z., Zhang, Y., Zhou, L., & Wang, L. (2025).
       ERA5-SH: A global gridded scale height dataset for tropospheric parameters based on ERA5 reanalysis.
       *Scientific Data, 12*(1).
@@ -99,6 +107,11 @@ publications:
       Yang, F., **Hao, R.**, Wang, H., Wang, L., Li, Z., Zheng, J., Wang, Y., & Chen, R. (2025).
       An optimal method for GNSS water vapor tomography based on parameter adaptation.
       *GPS Solutions, 30*(1).
+
+  - citation: >
+      **Hao, R.**, Yang, F., Du, Y., Meng, X., An, X., Zhou, L., & Chen, W. (2026).
+      Continuous Near-Real-Time Sea Level Retrieval from Low-Cost Multi-GNSS Observations Using a Windowed Spectral-Robust Fusion Framework.
+      *IEEE Transactions on Geoscience and Remote Sensing* (under review).
 
 awards_note: All competition awards list Ruixian Hao as the first-listed or sole awardee.
 awards:
